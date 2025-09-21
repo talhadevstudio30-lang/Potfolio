@@ -1,1 +1,101 @@
 @import "tailwindcss";
+@plugin "daisyui";
+body{
+    animation: opacityanimation 1s ease-in;
+
+}
+@keyframes  opacityanimation  {
+    0%{
+     opacity: 0;
+    }
+    100%{
+      opacity: 10;
+    }
+}
+.menu{
+    @apply  border-white w-full rounded-2xl text-center 
+}
+.menu{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+.menu:hover{
+    @apply delay-75 duration-300 bg-white text-blue-400 rounded-2xl 
+}
+.extra-icon{
+    cursor: pointer;
+}
+
+@media only screen and (max-width:450px) {
+    .extra-icon{
+        @apply h-13 w-13
+    }
+    .menu-button{
+        @apply h-7 w-7
+    }
+    .dev-image{
+        @apply h-63 w-63
+    }
+    .Name{
+        margin-top: 2px;
+        font-size: 22px;
+    }
+}
+.Name{
+    font-family: "Open Sans", sans-serif;
+    margin-top: 2px;
+}
+.menu-font{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.home-page-title{
+    @apply w-auto mb-1 text-wrap 
+}
+.home-page-title-para{
+    @apply w-90
+}
+@media only screen and (max-width:390px) {
+    .home-page-title{
+        @apply w-full mb-1 pl-3  text-wrap
+    }
+    .home-page-title-para{
+        @apply w-full pl-3 pr-2
+    }
+    .dev-image{
+        @apply h-62 w-62 
+    }
+}
+@media only screen and (max-height:650px) {
+    .front-page-container {
+        @apply h-auto mt-15 mb-15
+    }
+    .SideBarMenu{
+        @apply pt-12 sticky top-5 
+    }
+}
+
+.front-page-container{
+    font-family: "Open Sans", sans-serif;
+}
+
+@media only screen and (max-width:290px) {
+    .dev-image{
+        @apply h-45 w-45
+    }
+}
+.SideBarMenu{
+    @apply pt-12 sticky top-8 
+}
+@media only screen and (max-width:768px) {
+    .SideBarMenu{
+        @apply pt-12 sticky top-5 
+    }
+}
+@media only screen and (min-width:768px) {
+    .SideBarMenu{
+        @apply pt-16 sticky top-5 
+    }
+}
