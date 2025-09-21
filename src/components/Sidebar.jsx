@@ -5,7 +5,7 @@ import abouticon from '../images/download (5).png';
 import skillsicon from '../images/download.png';
 import projectsicon from '../images/download (6).png';
 import contactsicon from '../images/download (4).png';
-import crossicon from '.../images/download (1).png';
+import crossicon from '../images/download (1).png';
 
 const Sidebar = ({ SidebarMenuBtn, SideMenuCrossBtn, SideMenuCrossBtn_style }) => {
   return (
