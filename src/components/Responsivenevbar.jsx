@@ -14,9 +14,9 @@ function Responsivenevbar() {
               { label: "Projects", href: "#projects" , img: "src/images/download (6).png" },
               { label: "Contacts", href: "#contacts" , img: "src/images/download (4).png" },
             ].map((item, index) => (
-              <div>
+              <div  key={index}>
                   <a
-                    key={index}
+                   
                     href={item.href}
                     className={`px-3 py-2 m-1.5 rounded-2xl transition-all duration-300 ease-in-out hover:shadow-[0px_0px_10px_white] focus:outline-none focus:ring ${item.img === 'src/images/download (4).png' ? 'bg-gray-50/20' : ''} focus:ring-white focus:ring-offset-2
        shadow-[0px_0px_5px_white] hover:bg-gray-50/30 flex justify-center items-center`}
