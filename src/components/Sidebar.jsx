@@ -1,5 +1,10 @@
 import React from "react";
 import developerImage from '../images/developer-image.jpg';
+import homeicon from '../images/download (2).png';
+import abouticon from '../images/download (5).png';
+import skillsicon from '../images/download.png';
+import projectsicon from '../images/download (6).png';
+import contactsicon from '../images/download (4).png';
 
 const Sidebar = ({ SidebarMenuBtn, SideMenuCrossBtn, SideMenuCrossBtn_style }) => {
   return (
@@ -11,7 +16,7 @@ const Sidebar = ({ SidebarMenuBtn, SideMenuCrossBtn, SideMenuCrossBtn_style }) =
             <h1 className="text-[#2f94f9] text-x ml-2 mr-1 sm:text-xl">Talha Javed</h1>
           </div>
           <div className={`w-auto h-auto hover:shadow-[0px_0px_10px_#7abdff] shadow-[0px_0px_5px_#7abdff] flex justify-start p-1.5 items-center ml-2.5  rounded-2xl bg-blue-200/30 ${SideMenuCrossBtn_style} mt-2.5 backdrop-blur-xs hover:backdrop-blur-xl transition duration-200`} onnow Click={SideMenuCrossBtn} >
-            <img src="src/images/download (1).png" alt="" className="h-8 w-8 md:h-9 md:w-9" />
+            <img src={homeicon} alt="" className="h-8 w-8 md:h-9 md:w-9" />
           </div>
         </div>
         <div className={`absolute grid flex-wrap hover:shadow-[0px_0px_10px_#7abdff] shadow-[0px_0px_5px_#7abdff] bg-blue-400/30  transition duration-200 ${SideMenuCrossBtn_style}  backdrop-blur-xs  rounded-2xl hover:backdrop-blur-xl focus:backdrop-blur-xl transition-all duration-300 ml-2.5 p-1`} tabIndex={0}>
@@ -32,7 +37,7 @@ const Sidebar = ({ SidebarMenuBtn, SideMenuCrossBtn, SideMenuCrossBtn_style }) =
              transition-all duration-300 
              focus:outline-none "
              tabIndex={0} >
-            <img src="src/images/download (5).png" alt="" className=" h-8 w-8 cursor-pointer md:h-9 md:w-9 " />
+            <img src={abouticon} alt="" className=" h-8 w-8 cursor-pointer md:h-9 md:w-9 " />
             <h1 className="text-[#2f94f9] text-x ml-1.5 mr-1 hover:text-[#51a3f5] sm:text-xl">About</h1>
           </div>
           <div className="w-auto h-auto mt-0.5 
@@ -42,7 +47,7 @@ const Sidebar = ({ SidebarMenuBtn, SideMenuCrossBtn, SideMenuCrossBtn_style }) =
              transition-all duration-300 
              focus:outline-none "
              tabIndex={0} >
-            <img src="src/images/download.png" alt="" className=" h-8 w-8 cursor-pointer md:h-9 md:w-9 " />
+            <img src={skillsicon} alt="" className=" h-8 w-8 cursor-pointer md:h-9 md:w-9 " />
             <h1 className="text-[#2f94f9] text-x ml-1.5 mr-1 hover:text-[#51a3f5] sm:text-xl">Skills</h1>
           </div>
           <div
@@ -55,7 +60,7 @@ const Sidebar = ({ SidebarMenuBtn, SideMenuCrossBtn, SideMenuCrossBtn_style }) =
             tabIndex={0}  // 👈 Makes the div focusable
           >
             <img
-              src="src/images/download (6).png"
+              src={projectsicon}
               alt=""
               className="h-8 w-8 cursor-pointer md:h-9 md:w-9"
             />
@@ -71,7 +76,7 @@ const Sidebar = ({ SidebarMenuBtn, SideMenuCrossBtn, SideMenuCrossBtn_style }) =
              transition-all duration-300 
              focus:outline-none "
              tabIndex={0} >
-            <img src="src/images/download (4).png" alt="" className=" h-9 w-9 cursor-pointer md:h-10 md:w-10 " />
+            <img src={contactsicon} alt="" className=" h-9 w-9 cursor-pointer md:h-10 md:w-10 " />
             <h1 className="text-[#2f94f9] text-x ml-1 mr-1 hover:text-[#51a3f5] sm:text-xl">Contact</h1>
           </div>
 
