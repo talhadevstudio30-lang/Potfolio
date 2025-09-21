@@ -1,4 +1,5 @@
 import React from "react";
+import developerImage from '../images/developer-image.jpg';
 
 const Sidebar = ({ SidebarMenuBtn, SideMenuCrossBtn, SideMenuCrossBtn_style }) => {
   return (
@@ -6,10 +7,10 @@ const Sidebar = ({ SidebarMenuBtn, SideMenuCrossBtn, SideMenuCrossBtn_style }) =
       <div>
         <div className="absolute  bottom-3.5 flex flex-wrap">
           <div className={`w-auto h-auto mt-2.5 hover:shadow-[0px_0px_10px_#7abdff] shadow-[0px_0px_5px_#7abdff] flex justify-start p-1.5 items-center ml-1.5  rounded-2xl bg-blue-100/40 hover:bg-blue-200/30 backdrop-blur-xs focus:backdrop-blur-xl hover:backdrop-blur-xl transition-all duration-300`} onClick={SidebarMenuBtn} tabIndex={0} >
-            <img src="src/images/developer-image.jpg" alt="" className=" h-9 w-9 md:h-13 md:w-13 rounded-full" />
+            <img src={developerImage} alt="Developer" className=" h-9 w-9 md:h-13 md:w-13 rounded-full" />
             <h1 className="text-[#2f94f9] text-x ml-2 mr-1 sm:text-xl">Talha Javed</h1>
           </div>
-          <div className={`w-auto h-auto hover:shadow-[0px_0px_10px_#7abdff] shadow-[0px_0px_5px_#7abdff] flex justify-start p-1.5 items-center ml-2.5  rounded-2xl bg-blue-200/30 ${SideMenuCrossBtn_style} mt-2.5 backdrop-blur-xs hover:backdrop-blur-xl transition duration-200`} onClick={SideMenuCrossBtn} >
+          <div className={`w-auto h-auto hover:shadow-[0px_0px_10px_#7abdff] shadow-[0px_0px_5px_#7abdff] flex justify-start p-1.5 items-center ml-2.5  rounded-2xl bg-blue-200/30 ${SideMenuCrossBtn_style} mt-2.5 backdrop-blur-xs hover:backdrop-blur-xl transition duration-200`} onnow Click={SideMenuCrossBtn} >
             <img src="src/images/download (1).png" alt="" className="h-8 w-8 md:h-9 md:w-9" />
           </div>
         </div>

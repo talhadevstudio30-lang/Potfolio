@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Frontpage from './components/Frontpage';
 import Aboutpage from './components/Aboutpage';
-import Sidebar from './Sidebar';
+import Sidebar from './components/Sidebar';
 
 function App() {
 
