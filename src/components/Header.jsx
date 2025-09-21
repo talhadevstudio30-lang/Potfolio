@@ -32,48 +32,48 @@ function Header() {
         <>
             <div>
                 <header className='flex justify-center text-white items-center mt-2 pl-2 pr-2'>
-                    <div className="navbar shadow-[0px_0px_7px_#0080ff] bg-gradient-to-br  backdrop-blur-xs hover:backdrop-blur-xl transition duration-200 from-[#0080ffde] via-[#00bfffd3] to-[#00ffddd0] rounded-full w-2xl md:w-3xl lg:w-4xl">
+                    <div className="navbar shadow-[0px_0px_7px_#0080ff] bg-gradient-to-br  backdrop-blur-xs hover:backdrop-blur-xl transition duration-200 from-[#0080ffde] hover:scale-101 via-[#00bfffd3] to-[#00ffddd0] rounded-full w-2xl md:w-3xl lg:w-4xl">
                         <div className="flex-1">
                             <h1 className="Name ml-3.5 lg:text-3xl text-2xl font-normal pr-2">Talha Javed</h1>
                         </div>
                         {/* Menu */}
                         <nav className='pr-2.5 sm:flex lg:text-xl hidden'>
-                            <ul className="flex  text-white space-x-4 font-normal">
+                            <ul className="flex text-white space-x-4 font-normal">
                                 <li>
-                                    <a href="#home" className="menu-font scale-100  hover:text-blue-500 transition hover:font-medium duration-300">
+                                    <a
+                                        href="#home"
+                                        className="menu-font scale-100 hover:text-blue-500 focus:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-300 transition hover:font-medium duration-300"
+                                    >
                                         Home
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#about" className="menu-font hover:text-blue-500 transition hover:font-medium duration-300">
+                                    <a
+                                        href="#about"
+                                        className="menu-font hover:text-blue-500 focus:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-300 transition hover:font-medium duration-300"
+                                    >
                                         About
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#Skills" className="menu-font hover:text-blue-500 hover:font-medium transition duration-300">
+                                    <a
+                                        href="#Skills"
+                                        className="menu-font hover:text-blue-500 focus:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-300 hover:font-medium transition duration-300"
+                                    >
                                         Skills
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#Projects" className="menu-font hover:text-blue-500 transform hover:scale-105 transition duration-300 hover:font-medium">
+                                    <a
+                                        href="#Projects"
+                                        className="menu-font hover:text-blue-500 focus:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-300 transform hover:scale-105 focus:scale-105 transition duration-300 hover:font-medium"
+                                    >
                                         Projects
                                     </a>
                                 </li>
-                                {/* <li>
-                                    <details>
-                                        <summary className='hover:text-base-100 transition duration-150'>More</summary>
-                                        <ul className="bg-base-100 transition duration-200 rounded-xl z-10 absolute  p-2 mt-1.5">
-                                            <li>
-                                                <a>Projects</a>
-                                            </li>
-                                        </ul>
-                                    </details>
-                                </li> */}
-
                             </ul>
-
-
                         </nav>
+                        
                         <ul className='sm:flex mr-2 text-white hidden space-x-4 font-normal lg:text-xl '>
                             <li className='bg-white rounded-4xl  text-blue-400  hover:border-white delay-10 duration-100 pr-3 pl-3 p-1.5 pb-2'>
                                 <a href="#contact" className="menu-font hover:text-blue-500 transition" style={{fontWeight : '400'}}>
@@ -96,7 +96,7 @@ function Header() {
                         </div>
                     </div>
                     <div>
-                        <div className='extra-icon h-14 w-14 lg:h-15 lg:w-15 rounded-full shadow-[0px 0px 10px black]  border-2 p-1 border-[#00dfc2] shadow-[0px_0px_7px_#00dfc2] ml-2'>
+                        <div className='extra-icon   h-14 w-14 lg:h-15 lg:w-15 rounded-full shadow-[0px 0px 10px black]  border-2 p-1 border-[#02dbbe] shadow-[0px_0px_7px_#00dfc2] ml-3  hover:scale-110 transition duration-200 '>
                             <img src={shortIcon} alt="icon" className='h-full w-full rounded-full' />
 
                         </div>
