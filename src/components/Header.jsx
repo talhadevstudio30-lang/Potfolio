@@ -34,7 +34,7 @@ function Header() {
                 <header className='flex justify-center text-white items-center mt-2 pl-2 pr-2'>
                     <div className="navbar shadow-[0px_0px_7px_#0080ff] bg-gradient-to-br  backdrop-blur-xs hover:backdrop-blur-xl transition duration-200 from-[#0080ffde] via-[#00bfffd3] to-[#00ffddd0] rounded-full w-2xl md:w-3xl lg:w-4xl">
                         <div className="flex-1">
-                            <h1 className="Name ml-3.5 lg:text-3xl text-2xl font-normal pr-2">Talha Crafted</h1>
+                            <h1 className="Name ml-3.5 lg:text-3xl text-2xl font-normal pr-2">Talha Javed</h1>
                         </div>
                         {/* Menu */}
                         <nav className='pr-2.5 sm:flex lg:text-xl hidden'>
