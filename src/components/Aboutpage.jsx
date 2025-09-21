@@ -1,4 +1,7 @@
 import React, { useEffect } from 'react';
+import TechnicalImg from '../images/Technical.png';
+import ProfessionalImg from '../images/Professional.png';
+import EducationImg from '../images/Education.png';
 
 function Aboutpage() {
 

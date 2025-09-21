@@ -1,5 +1,9 @@
+
 import React, { useState } from 'react';
 import Responsivenevbar from './Responsivenevbar';
+import shortIcon from '../images/short-icon.png';
+import menuIcon from '../images/download (8).png';
+import exitIcon from '../images/download (7).png';
 
 function Header() {
 
@@ -81,10 +85,10 @@ function Header() {
                             <div className="flex-none block sm:hidden">
                                 <button onClick={menubtn} className="border-2 active:-rotate-30 transition duration-200 active:shadow-[0px_0px_10px_white] border-gray-50 shadow-[0px_0px_5px_white]  rounded-full mr-2 mt-1 pl-1 pr-1 pt-0.5 pb-0.5 " style={{ paddingLeft: '3px', paddingRight: '3px'}}>
                                     {menusvg && 
-                                    <img src="src/images/download (8).png" alt="" className='menu-button h-8 w-8'/>
+                                    <img src={menuIcon} alt="menu" className='menu-button h-8 w-8'/>
                                     }
                                     {exitsvg && 
-                                    <img src="src/images/download (7).png" alt="" className='menu-button h-8 w-8'/>
+                                    <img src={exitIcon} alt="close" className='menu-button h-8 w-8'/>
                                     }
                                 </button>
                             </div>
@@ -92,7 +96,7 @@ function Header() {
                     </div>
                     <div>
                         <div className='extra-icon h-14 w-14 lg:h-15 lg:w-15 rounded-full shadow-[0px 0px 10px black]  border-2 p-1 border-[#00dfc2] shadow-[0px_0px_7px_#00dfc2] ml-2'>
-                            <img src="src/images/short-icon.png" alt="" className='h-full w-full rounded-full' />
+                            <img src={shortIcon} alt="icon" className='h-full w-full rounded-full' />
 
                         </div>
                     </div>

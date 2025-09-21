@@ -1,4 +1,5 @@
 import React from 'react';
+import developerImage from '../images/developer-image.jpg';
 
 function Frontpageinformation() {
     return (
@@ -8,7 +9,7 @@ function Frontpageinformation() {
                     <div className='h-auto w-auto  flex justify-center items-center'>
                         {/* this div is the container of potfolio image */}
                         <div>
-                            <img src="src/images/developer-image.jpg" alt="potfolio image" className='dev-image h-60 w-60 md:h-65 md:w-65 rounded-full md:mr-6.5 shadow-[0px_0px_15px_#0080ff]' />
+                            <img src={developerImage} alt="potfolio image" className='dev-image h-60 w-60 md:h-65 md:w-65 rounded-full md:mr-6.5 shadow-[0px_0px_15px_#0080ff]' />
                         </div>
                     </div>
                     {/* this div is the contaner of title of homepage */}
