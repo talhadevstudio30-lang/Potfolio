@@ -32,7 +32,7 @@ function Header() {
         <>
             <div>
                 <header className='flex justify-center text-white items-center mt-2 pl-2 pr-2'>
-                    <div className="navbar shadow-[0px_0px_7px_#0080ff] bg-gradient-to-br  backdrop-blur-xs hover:backdrop-blur-xl transition duration-200 from-[#0080ffde] hover:scale-101 via-[#00bfffd3] to-[#00ffddd0] rounded-full w-2xl md:w-3xl lg:w-4xl">
+                    <div className="navbar shadow-[0px_0px_7px_#00bfffd3] bg-gradient-to-br  backdrop-blur-xs hover:backdrop-blur-xl transition duration-200 from-[#0080ffde] hover:scale-101 via-[#00bfffd3] to-[#00ffddd0] rounded-full w-2xl md:w-3xl lg:w-4xl">
                         <div className="flex-1">
                             <h1 className="Name ml-3.5 lg:text-3xl text-2xl font-normal pr-2">Talha Javed</h1>
                         </div>
@@ -42,15 +42,16 @@ function Header() {
                                 <li>
                                     <a
                                         href="#home"
-                                        className="menu-font scale-100 hover:text-blue-500 focus:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-300 transition hover:font-medium duration-300"
+                                        className="menu-font transform transition duration-300 ease-in-out hover:scale-105 hover:text-blue-100  focus:outline-none focus:ring-2 "
                                     >
                                         Home
                                     </a>
+
                                 </li>
                                 <li>
                                     <a
                                         href="#about"
-                                        className="menu-font hover:text-blue-500 focus:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-300 transition hover:font-medium duration-300"
+                                        className="menu-font hover:text-blue-100  focus:outline-none focus:ring-2 transition hover:font-medium duration-300"
                                     >
                                         About
                                     </a>
@@ -58,7 +59,7 @@ function Header() {
                                 <li>
                                     <a
                                         href="#Skills"
-                                        className="menu-font hover:text-blue-500 focus:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-300 hover:font-medium transition duration-300"
+                                        className="menu-font hover:text-blue-100 focus:outline-none focus:ring-2  hover:font-medium transition duration-300"
                                     >
                                         Skills
                                     </a>
@@ -66,17 +67,17 @@ function Header() {
                                 <li>
                                     <a
                                         href="#Projects"
-                                        className="menu-font hover:text-blue-500 focus:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-300 transform hover:scale-105 focus:scale-105 transition duration-300 hover:font-medium"
+                                        className="menu-font hover:text-blue-100  focus:outline-none focus:ring-2  transform hover:scale-105 focus:scale-105 transition duration-300 hover:font-medium"
                                     >
                                         Projects
                                     </a>
                                 </li>
                             </ul>
                         </nav>
-                        
+
                         <ul className='sm:flex mr-2 text-white hidden space-x-4 font-normal lg:text-xl '>
                             <li className='bg-white rounded-4xl  text-blue-400  hover:border-white delay-10 duration-100 pr-3 pl-3 p-1.5 pb-2'>
-                                <a href="#contact" className="menu-font hover:text-blue-500 transition" style={{fontWeight : '400'}}>
+                                <a href="#contact" className="menu-font hover:text-blue-500 transition" style={{ fontWeight: '400' }}>
                                     Contact
                                 </a>
                             </li>
@@ -84,12 +85,12 @@ function Header() {
                         {/* menu button */}
                         <div>
                             <div className="flex-none block sm:hidden">
-                                <button onClick={menubtn} className="border-2 active:-rotate-30 transition duration-200 active:shadow-[0px_0px_10px_white] border-gray-50 shadow-[0px_0px_5px_white]  rounded-full mr-2 mt-1 pl-1 pr-1 pt-0.5 pb-0.5 " style={{ paddingLeft: '3px', paddingRight: '3px'}}>
-                                    {menusvg && 
-                                    <img src={menuIcon} alt="menu" className='menu-button h-8 w-8'/>
+                                <button onClick={menubtn} className="border-2 active:-rotate-30 transition duration-200 active:shadow-[0px_0px_10px_white] border-gray-50 shadow-[0px_0px_5px_white]  rounded-full mr-2 mt-1 pl-1 pr-1 pt-0.5 pb-0.5 " style={{ paddingLeft: '3px', paddingRight: '3px' }}>
+                                    {menusvg &&
+                                        <img src={menuIcon} alt="menu" className='menu-button h-8 w-8' />
                                     }
-                                    {exitsvg && 
-                                    <img src={exitIcon} alt="close" className='menu-button h-8 w-8'/>
+                                    {exitsvg &&
+                                        <img src={exitIcon} alt="close" className='menu-button h-8 w-8' />
                                     }
                                 </button>
                             </div>
