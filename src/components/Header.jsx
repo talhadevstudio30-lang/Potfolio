@@ -10,8 +10,8 @@ function Header() {
 
     const [menusvg, setmenusvg] = useState(true);
     const [exitsvg, setexitsvg] = useState(false);
-    const [secNavbar , setsecNavbar] = useState(false);
-    const [opacityanimation , setopacityanimation] = useState('opacity-0');
+    const [secNavbar, setsecNavbar] = useState(false);
+    const [opacityanimation, setopacityanimation] = useState('opacity-0');
 
     const menubtn = () => {
         if (!exitsvg) {
@@ -108,7 +108,7 @@ function Header() {
             <div className={`transition delay-100 duration-100 ease ${opacityanimation}`}>
                 {secNavbar &&
                     <div>
-                        <Responsivenevbar opacityanimation={opacityanimation} setopacityanimation={setopacityanimation}/>
+                        <Responsivenevbar opacityanimation={opacityanimation} setopacityanimation={setopacityanimation} />
                     </div>
                 }
 
