@@ -55,7 +55,7 @@ const Skillspage = () => {
     return (
         <>
             <div>
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center  bg-gradient-to-br from-blue-400  pb-2.5 to-blue-500 bg-clip-text text-transparent">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center  bg-gradient-to-br from-blue-400 pb-2.5 to-blue-500 bg-clip-text text-transparent">
                     Skills
                 </h1>
                 <p className="text-center  text-lg md:text-xl lg:text-2xl mb-3 text-gray-600 pl-4 pr-4">
@@ -66,8 +66,8 @@ const Skillspage = () => {
             <div className='flex justify-center items-center flex-wrap'>
                 {items.map((item, index) => <div key={index}>
                     <div  className='p-5 grid justify-center items-center flex-wrap'>
-                        <div className='relative'> {/* Make parent relative */}
-                            <div className='border-2 border-white absolute h-8.5 w-8.5 top-2.5 rounded-full right-2.5 grid justify-center items-center'>
+                        <div className='relative z-10'> {/* Make parent relative */}
+                            <div className='border-2 border-white z-10 absolute h-8.5 w-8.5 top-2.5 rounded-full right-2.5 grid justify-center items-center'>
                                 <button onClick={() => alert(item.skill_title)}>
                                      <img src={Info} alt="" className='h-full w-full rounded-full ' />
                                 </button>
