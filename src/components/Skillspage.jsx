@@ -6,6 +6,7 @@ import jsLogo from '../skills-images/JS.png';
 import githubLogo from '../skills-images/Github.png';
 import viteLogo from '../skills-images/Vite.png';
 import tailwindcssLogo from '../skills-images/Tailwindcss.png';
+import informationicon from 'src/skills-images/download.png';
 
 
 const Skillspage = () => {
@@ -68,7 +69,7 @@ const Skillspage = () => {
                         <div className='relative'> {/* Make parent relative */}
                             <div className='border-2 border-white absolute h-8.5 w-8.5 top-2.5 rounded-full right-2.5 grid justify-center items-center'>
                                 <button onClick={() => alert(item.skill_title)}>
-                                     <img src="src/skills-images/download.png" alt="" className='h-full w-full rounded-full ' />
+                                     <img src={informationicon} alt="" className='h-full w-full rounded-full ' />
                                 </button>
                                </div>
 

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Frontpage from './components/Frontpage';
 import Secondpage from './components/Secondpage';
-import Skillspage from './skills-images/Skillspage';
+import Skillspage from './components/Skillspage';
 
 const App = () => {
 
