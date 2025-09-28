@@ -14,50 +14,64 @@ const Skillspage = () => {
 
     const items = [
         {
-        skill_image: `${htmlLogo}`,
-        skill_title: "HTML",
-        skill_theme: "border-orange-300 bg-orange-100",
-        
-    },
+            skill_image: `${htmlLogo}`,
+            skill_title: "HTML",
+            skill_theme: "border-orange-300 bg-orange-100 shadow-[0px_0px_5px_#FDBA74]",
+            skill_title_theme: "text-orange-600",
+            skill_hover_theme: "hover:border-orange-400 hover:shadow-[0px_0px_10px_#FDBA74] hover:bg-orange-200  transition duration-200"
+
+        },
         {
             skill_image: `${cssLogo}`,
             skill_title: "CSS",
-            skill_theme: "border-blue-300 bg-blue-100",
+            skill_theme: "border-blue-300 bg-blue-100 shadow-[0px_0px_5px_#93C5FD]",
+            skill_title_theme: "text-blue-600",
+             skill_hover_theme: "hover:border-blue-400 hover:shadow-[0px_0px_10px_#93C5FD] hover:bg-blue-200  transition duration-200"
 
         },
-     {
-        skill_image: `${jsLogo}`,
-        skill_title: "JavaScript",
-        skill_theme: "border-yellow-300 bg-yellow-100",
-        
-    },
-     {
-        skill_image: `${githubLogo}`,
-        skill_title: "GitHub",
-        skill_theme: "border-gray-400 bg-gray-200",
-        
-    },
-     {
-        skill_image: `${Git}`,
-        skill_title: "Git",
-        skill_theme: "border-orange-300 bg-orange-100",
-        
-    },
-    {
-        skill_image: `${viteLogo}`,
-        skill_title: "Vite + React.js",
-        skill_theme: "border-indigo-300 bg-blue-100",
-        
-    },
-    {
-        skill_image: `${tailwindcssLogo}`,
-        skill_title: "Tailwind CSS",
-        skill_theme: "border-cyan-300 bg-cyan-100",
-        
-    },
-]
+        {
+            skill_image: `${jsLogo}`,
+            skill_title: "JavaScript",
+            skill_theme: "border-yellow-300 bg-yellow-100 shadow-[0px_0px_5px_#FCD34D]",
+            skill_title_theme: "text-yellow-400",
+             skill_hover_theme: "hover:border-yellow-400 hover:shadow-[0px_0px_10px_#FCD34D] hover:bg-yellow-200  transition duration-200"
 
- 
+        },
+        {
+            skill_image: `${githubLogo}`,
+            skill_title: "GitHub",
+            skill_theme: "border-gray-400 bg-gray-200 shadow-[0px_0px_5px_#737171]",
+            skill_title_theme: "text-gray-700",
+            skill_hover_theme: "hover:border-gray-500 hover:shadow-[0px_0px_10px_#737171] hover:bg-gray-300  transition duration-200"
+
+        },
+        {
+            skill_image: `${Git}`,
+            skill_title: "Git",
+            skill_theme: "border-orange-300 bg-orange-100 shadow-[0px_0px_5px_#FDBA74]",
+            skill_title_theme: "text-orange-600",
+            skill_hover_theme: "hover:border-orange-500 hover:shadow-[0px_0px_10px_#FDBA74] hover:bg-orange-200  transition duration-200"
+
+        },
+        {
+            skill_image: `${viteLogo}`,
+            skill_title: "Vite + React.js",
+            skill_theme: "border-indigo-400 bg-blue-100 shadow-[0px_0px_5px_#6366F1]",
+            skill_title_theme: "text-indigo-500",
+             skill_hover_theme: "hover:border-indigo-500 hover:shadow-[0px_0px_10px_#6366F1] hover:bg-indigo-200  transition duration-200"
+
+        },
+        {
+            skill_image: `${tailwindcssLogo}`,
+            skill_title: "Tailwind CSS",
+            skill_theme: "border-cyan-300 bg-cyan-100 shadow-[0px_0px_5px_#67E8F9]",
+            skill_title_theme: "text-cyan-600",
+            skill_hover_theme: "hover:border-cyan-500 hover:shadow-[0px_0px_10px_#67E8F9] hover:bg-cyan-200  transition duration-200"
+
+        },
+    ]
+
+
 
     return (
         <>
@@ -70,23 +84,21 @@ const Skillspage = () => {
                     modern, responsive, and efficient web applications.
                 </p>
             </div>
-            <div className='flex justify-center z-0 relative items-center flex-wrap' style={{ zIndex: -3 }}>
+            <div className='flex justify-center items-center flex-wrap'>
                 {items.map((item, index) => <div key={index}>
-                    <div  className='p-5 grid justify-center items-center flex-wrap'>
-                        <div className='relative z-10'> {/* Make parent relative */}
-                            <div className='border-2 border-white z-0 absolute h-8.5 w-8.5 top-2.5 rounded-full right-2.5 grid justify-center items-center'>
-                                <button onClick={() => alert(item.skill_title)}>
-                                     <img src={Info} alt="" className='h-full w-full rounded-full ' />
-                                </button>
-                               </div>
-
-                            <div className={`rounded-3xl  grid justify-center items-center h-70 border-2  ${item.skill_theme} w-60 pl-5 pr-5 pb-4.5 shadow-[0px_0px_10px_]`}>
+                    <div className='p-5 grid justify-center items-center flex-wrap'>
+                        <div>
+                            <div className={`rounded-3xl  grid justify-center items-center h-60 border-2 ${item.skill_hover_theme}  ${item.skill_theme} w-55 pb-4.5 `}>
                                 <div className='w-full h-auto grid justify-center items-center pt-2'>
                                     <img
                                         src={item.skill_image}
                                         alt="HTML Logo"
-                                        className='h-35 w-35 lg:h-37 lg:w-37'
+                                        className={`${item.skill_image == `${viteLogo}` ? 'mt-0' : ''} h-35 w-35 mt-3.5 lg:h-37 lg:w-37`}
+
                                     />
+                                </div>
+                                <div>
+                                    <h1 className={`${item.skill_title_theme} text-center text-3xl pl-3 pr-3 pb-10 ${item.skill_title == 'Vite + React.js' ? 'mt-1' : ''}`}>{item.skill_title}</h1>
                                 </div>
                             </div>
                         </div>
