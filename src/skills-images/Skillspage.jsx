@@ -69,7 +69,7 @@ const Skillspage = () => {
                         <div className='relative'> {/* Make parent relative */}
                             <div className='border-2 border-white absolute h-8.5 w-8.5 top-2.5 rounded-full right-2.5 grid justify-center items-center'>
                                 <button onClick={() => alert(item.skill_title)}>
-                                     <img src={informationicon} alt="" className='h-full w-full rounded-full ' />
+                                     <img src={Info} alt="" className='h-full w-full rounded-full ' />
                                 </button>
                                </div>
 
