@@ -67,7 +67,7 @@ const Skillspage = () => {
                 {items.map((item, index) => <div key={index}>
                     <div  className='p-5 grid justify-center items-center flex-wrap'>
                         <div className='relative z-10'> {/* Make parent relative */}
-                            <div className='border-2 border-white z-10 absolute h-8.5 w-8.5 top-2.5 rounded-full right-2.5 grid justify-center items-center'>
+                            <div className='border-2 border-white z-0 absolute h-8.5 w-8.5 top-2.5 rounded-full right-2.5 grid justify-center items-center'>
                                 <button onClick={() => alert(item.skill_title)}>
                                      <img src={Info} alt="" className='h-full w-full rounded-full ' />
                                 </button>

@@ -10,8 +10,8 @@ import crossicon from '../images/download (1).png';
 const Sidebar = ({ SidebarMenuBtn, SideMenuCrossBtn, SideMenuCrossBtn_style }) => {
   return (
     <>
-      <div>
-        <div className="absolute z-30 bottom-3.5 flex flex-wrap">
+      <div className="relative z-20">
+        <div className="absolute bottom-3.5 flex flex-wrap">
           <div className={`w-auto h-auto mt-2.5 hover:shadow-[0px_0px_10px_#7abdff] shadow-[0px_0px_5px_#7abdff] flex justify-start p-1.5 items-center ml-1.5  rounded-2xl bg-blue-100/40 hover:bg-blue-200/30 backdrop-blur-xs focus:backdrop-blur-xl hover:backdrop-blur-xl transition-all duration-300`} onClick={SidebarMenuBtn} tabIndex={0} >
             <img src={developerImage} alt="Developer" className=" h-9 w-9 md:h-13 md:w-13 rounded-full" />
             <h1 className="text-[#2f94f9] text-x ml-2 mr-1 sm:text-xl">Talha Javed</h1>
@@ -28,7 +28,7 @@ const Sidebar = ({ SidebarMenuBtn, SideMenuCrossBtn, SideMenuCrossBtn_style }) =
              transition-all duration-300 
              focus:outline-none "
              tabIndex={0} >
-            <img src={homeicon} alt="" className=" h-8 cursor-pointer w-8 md:h-9 md:w-9 " />
+            <img src={homeicon} alt="" className="h-8 cursor-pointer w-8 md:h-9 md:w-9 " />
             <h1 className="text-[#2f94f9] hover:text-[#51a3f5]  text-x ml-1 mr-1 sm:text-xl">Home</h1>
           </div>
           <div className="w-auto h-auto mt-0.5 
