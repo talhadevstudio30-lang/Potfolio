@@ -7,6 +7,7 @@ import githubLogo from '../skills-images/Github.png';
 import viteLogo from '../skills-images/Vite.png';
 import tailwindcssLogo from '../skills-images/Tailwindcss.png';
 import Info from '../skills-images/download.png';
+import Git from '../skills-images/Git.png';
 
 
 const Skillspage = () => {
@@ -34,6 +35,12 @@ const Skillspage = () => {
         skill_image: `${githubLogo}`,
         skill_title: "GitHub",
         skill_theme: "border-gray-400 bg-gray-200",
+        
+    },
+     {
+        skill_image: `${Git}`,
+        skill_title: "Git",
+        skill_theme: "border-orange-300 bg-orange-100",
         
     },
     {
