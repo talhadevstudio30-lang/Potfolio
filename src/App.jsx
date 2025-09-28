@@ -10,14 +10,13 @@ const App = () => {
       <div id='home'>
         <Frontpage />
       </div>
+
       <div>
-        <div>
-          <Secondpage />
-        </div>
-        <div>
-          <Skillspage />
-        </div>
+        <Secondpage />
+        <Skillspage />
       </div>
+
+
 
     </>
   )

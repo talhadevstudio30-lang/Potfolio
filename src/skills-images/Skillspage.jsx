@@ -1,43 +1,48 @@
-import React, { useState } from 'react'
-import React from 'react'
 
+import React from 'react'
+import htmlLogo from '../skills-images/HTML.png';
+import cssLogo from '../skills-images/Css.png';
+import jsLogo from '../skills-images/JS.png';
+import githubLogo from '../skills-images/Github.png';
+import viteLogo from '../skills-images/Vite.png';
+import tailwindcssLogo from '../skills-images/Tailwindcss.png';
 
 
 const Skillspage = () => {
 
     const items = [
         {
-        skill_image: "src/skills-images/HTML.png",
+        skill_image: `${htmlLogo}`,
         skill_title: "HTML",
         skill_theme: "border-orange-300 bg-orange-100",
         
     },
         {
-        skill_image: "src/skills-images/CSS.png",
+            skill_image: `${cssLogo}`,
             skill_title: "CSS",
             skill_theme: "border-blue-300 bg-blue-100",
 
         },
      {
-        skill_image: "src/skills-images/JS.png",
+        skill_image: `${jsLogo}`,
         skill_title: "JavaScript",
         skill_theme: "border-yellow-300 bg-yellow-100",
         
     },
      {
-        skill_image: "src/skills-images/Github.png",
+        skill_image: `${githubLogo}`,
         skill_title: "GitHub",
         skill_theme: "border-gray-400 bg-gray-200",
         
     },
     {
-        skill_image: "src/skills-images/Vite.png",
+        skill_image: `${viteLogo}`,
         skill_title: "Vite + React.js",
         skill_theme: "border-indigo-300 bg-blue-100",
         
     },
     {
-        skill_image: "src/skills-images/Tailwindcss.png",
+        skill_image: `${tailwindcssLogo}`,
         skill_title: "Tailwind CSS",
         skill_theme: "border-cyan-300 bg-cyan-100",
         
