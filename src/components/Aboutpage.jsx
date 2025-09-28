@@ -65,7 +65,7 @@ function Aboutpage() {
   const age = calculateAge(dob);
   return (
     <>
-      <div className='w-full flex pt-0.5 sm:pt-1.5 justify-center items-center pb-15 md:pb-35'>
+      <div className='w-full flex pt-0.5 sm:pt-1.5 justify-center items-center pb-10 md:pb-20'>
         <div className="Name bg-blue-50 p-3 md:p-4 rounded-3xl pb-1.5 w-[98%]  shadow-[0px_0px_7px_#0080ff]">
 
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-5 bg-gradient-to-br from-blue-500  pb-2.5 to-cyan-400 bg-clip-text text-transparent mt-2">
