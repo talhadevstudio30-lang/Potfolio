@@ -1,5 +1,7 @@
-
+import React, { useState } from 'react'
 import React from 'react'
+
+
 
 const Skillspage = () => {
 
@@ -11,7 +13,7 @@ const Skillspage = () => {
         
     },
         {
-            skill_image: "src/skills-images/Css.png",
+        skill_image: "src/skills-images/CSS.png",
             skill_title: "CSS",
             skill_theme: "border-blue-300 bg-blue-100",
 
