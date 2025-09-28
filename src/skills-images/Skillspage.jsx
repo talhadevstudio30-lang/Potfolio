@@ -63,7 +63,7 @@ const Skillspage = () => {
                     modern, responsive, and efficient web applications.
                 </p>
             </div>
-            <div className='flex justify-center items-center flex-wrap'>
+            <div className='flex justify-center z-0 relative items-center flex-wrap' style={{ zIndex: -3 }}>
                 {items.map((item, index) => <div key={index}>
                     <div  className='p-5 grid justify-center items-center flex-wrap'>
                         <div className='relative z-10'> {/* Make parent relative */}
