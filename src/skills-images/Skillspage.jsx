@@ -6,7 +6,7 @@ import jsLogo from '../skills-images/JS.png';
 import githubLogo from '../skills-images/Github.png';
 import viteLogo from '../skills-images/Vite.png';
 import tailwindcssLogo from '../skills-images/Tailwindcss.png';
-import informationicon from 'src/skills-images/download.png';
+import informationicon from '...src/skills-images/download.png';
 
 
 const Skillspage = () => {
