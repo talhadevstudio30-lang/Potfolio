@@ -88,7 +88,7 @@ const Skillspage = () => {
                     <div className='p-5 grid justify-center items-center flex-wrap'>
                         <div>
                             <div className={`rounded-3xl  grid justify-center items-center h-60 border-2 ${item.skill_hover_theme}  ${item.skill_theme} w-55 pb-4.5 `}>
-                                <div className='w-full h-auto grid justify-center items-center pt-2'>
+                                <div className='w-full h-full grid justify-center items-center pt-2'>
                                     <img
                                         src={item.skill_image}
                                         alt="HTML Logo"
