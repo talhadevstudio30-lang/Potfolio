@@ -25,7 +25,7 @@ const Skillspage = () => {
             skill_title: "CSS",
             skill_theme: "border-blue-300 bg-blue-100 shadow-[0px_0px_5px_#93C5FD]",
             skill_title_theme: "text-blue-600",
-             skill_hover_theme: "hover:border-blue-400 hover:shadow-[0px_0px_10px_#93C5FD] hover:bg-blue-200  transition duration-200"
+            skill_hover_theme: "hover:border-blue-400 hover:shadow-[0px_0px_10px_#93C5FD] hover:bg-blue-200  transition duration-200"
 
         },
         {
@@ -33,7 +33,7 @@ const Skillspage = () => {
             skill_title: "JavaScript",
             skill_theme: "border-yellow-300 bg-yellow-100 shadow-[0px_0px_5px_#FCD34D]",
             skill_title_theme: "text-yellow-400",
-             skill_hover_theme: "hover:border-yellow-400 hover:shadow-[0px_0px_10px_#FCD34D] hover:bg-yellow-200  transition duration-200"
+            skill_hover_theme: "hover:border-yellow-400 hover:shadow-[0px_0px_10px_#FCD34D] hover:bg-yellow-200  transition duration-200"
 
         },
         {
@@ -57,7 +57,7 @@ const Skillspage = () => {
             skill_title: "Vite + React",
             skill_theme: "border-indigo-400 bg-blue-100 shadow-[0px_0px_5px_#6366F1]",
             skill_title_theme: "text-indigo-500",
-             skill_hover_theme: "hover:border-indigo-500 hover:shadow-[0px_0px_10px_#6366F1] hover:bg-indigo-200  transition duration-200"
+            skill_hover_theme: "hover:border-indigo-500 hover:shadow-[0px_0px_10px_#6366F1] hover:bg-indigo-200  transition duration-200"
 
         },
         {
@@ -83,22 +83,25 @@ const Skillspage = () => {
                     modern, responsive, and efficient web applications.
                 </p>
             </div>
-            <div className='flex justify-center items-center flex-wrap'>
+            <div className='flex justify-center  items-center flex-wrap'>
                 {items.map((item, index) => <div key={index}>
-                    <div className='p-5 grid justify-center items-center flex-wrap'>
+                    <div className='p-3.5 sm:p-5 grid justify-center items-center flex-wrap'>
                         <div>
-                            <div className={`rounded-3xl  grid justify-center items-center h-53 border-2 ${item.skill_hover_theme}  ${item.skill_theme} w-50 sm:h-60 sm:w-55 pb-4.5 `}>
-                                <div className='w-full h-full grid justify-center items-center pt-2'>
-                                    <img
-                                        src={item.skill_image}
-                                        alt="HTML Logo"
-                                        className={`${item.skill_image == `${viteLogo}` ? 'mt-0' : ''} h-30 w-30 sm:h-35 sm:w-35 mt-3.5 lg:h-37 lg:w-37`}
+                            <div className={`rounded-3xl  grid justify-center items-center min-h-max border-2 ${item.skill_hover_theme}  ${item.skill_theme} w-50 sm:min-h-max sm:w-55 pb-6 `}>
+                                <div className='w-full h-full grid justify-center items-center'>
+                                    <div className=' grid justify-center items-center'>
+                                        <img
+                                            src={item.skill_image}
+                                            alt="HTML Logo"
+                                            className={`${item.skill_image == `${viteLogo}` ? 'mt-0' : ''} h-30 w-30 sm:h-35 sm:w-35 mt-3.5 lg:h-37 lg:w-37`}
 
-                                    />
+                                        />
+                                    </div>
+                                    <div className=''>
+                                        <h1 className={`${item.skill_title_theme} text-center text-3xl pl-3.5 pr-3.5  ${item.skill_title == 'Vite + React.js' ? 'mt-1' : ''}`}>{item.skill_title}</h1>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h1 className={`${item.skill_title_theme} text-center text-3xl pl-3 pr-3 pb-10 ${item.skill_title == 'Vite + React.js' ? 'mt-1' : ''}`}>{item.skill_title}</h1>
-                                </div>
+
                             </div>
                         </div>
                     </div>
