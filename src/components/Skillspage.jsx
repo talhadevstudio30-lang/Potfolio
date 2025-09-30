@@ -54,7 +54,7 @@ const Skillspage = () => {
         },
         {
             skill_image: `${viteLogo}`,
-            skill_title: "Vite + React.js",
+            skill_title: "Vite + React",
             skill_theme: "border-indigo-400 bg-blue-100 shadow-[0px_0px_5px_#6366F1]",
             skill_title_theme: "text-indigo-500",
              skill_hover_theme: "hover:border-indigo-500 hover:shadow-[0px_0px_10px_#6366F1] hover:bg-indigo-200  transition duration-200"
