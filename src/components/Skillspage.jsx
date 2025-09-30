@@ -87,12 +87,12 @@ const Skillspage = () => {
                 {items.map((item, index) => <div key={index}>
                     <div className='p-5 grid justify-center items-center flex-wrap'>
                         <div>
-                            <div className={`rounded-3xl  grid justify-center items-center h-60 border-2 ${item.skill_hover_theme}  ${item.skill_theme} w-55 pb-4.5 `}>
+                            <div className={`rounded-3xl  grid justify-center items-center h-53 border-2 ${item.skill_hover_theme}  ${item.skill_theme} w-50 sm:h-60 sm:w-55 pb-4.5 `}>
                                 <div className='w-full h-full grid justify-center items-center pt-2'>
                                     <img
                                         src={item.skill_image}
                                         alt="HTML Logo"
-                                        className={`${item.skill_image == `${viteLogo}` ? 'mt-0' : ''} h-35 w-35 mt-3.5 lg:h-37 lg:w-37`}
+                                        className={`${item.skill_image == `${viteLogo}` ? 'mt-0' : ''} h-30 w-30 sm:h-35 sm:w-35 mt-3.5 lg:h-37 lg:w-37`}
 
                                     />
                                 </div>
