@@ -42,7 +42,7 @@ function Header() {
                                 <li>
                                     <a
                                         href="#home"
-                                        className="menu-font transform transition duration-300 ease-in-out hover:scale-105 hover:text-blue-100  focus:outline-none focus:ring-2 "
+                                        className="menu-font transform transition duration-300 ease-in-out hover:scale-105 hover:text-blue-100  focus:outline-none" 
                                     >
                                         Home
                                     </a>
@@ -51,7 +51,7 @@ function Header() {
                                 <li>
                                     <a
                                         href="#about"
-                                        className="menu-font hover:text-blue-100  focus:outline-none focus:ring-2 transition hover:font-medium duration-300"
+                                        className="menu-font hover:text-blue-100  focus:outline-none transition hover:font-medium duration-300" 
                                     >
                                         About
                                     </a>
@@ -59,7 +59,7 @@ function Header() {
                                 <li>
                                     <a
                                         href="#Skills"
-                                        className="menu-font hover:text-blue-100 focus:outline-none focus:ring-2  hover:font-medium transition duration-300"
+                                        className="menu-font hover:text-blue-100 focus:outline-none hover:font-medium transition duration-300" 
                                     >
                                         Skills
                                     </a>
@@ -67,7 +67,7 @@ function Header() {
                                 <li>
                                     <a
                                         href="#Projects"
-                                        className="menu-font hover:text-blue-100  focus:outline-none focus:ring-2  transform hover:scale-105 focus:scale-105 transition duration-300 hover:font-medium"
+                                        className="menu-font hover:text-blue-100  focus:outline-none  transform hover:scale-105 focus:scale-105 transition duration-300 hover:font-medium"
                                     >
                                         Projects
                                     </a>

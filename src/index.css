@@ -2,7 +2,6 @@
 @plugin "daisyui";
 body{
     animation: opacityanimation 1s ease-in;
-
 }
 @keyframes  opacityanimation  {
     0%{
