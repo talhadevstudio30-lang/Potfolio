@@ -77,7 +77,7 @@ function Aboutpage() {
               <h2 className="text-2xl font-semibold text-blue-500  mb-1.5">
                 Welcome to My Creative Space
               </h2>
-              <p className="text-gray-700 text-lg lg:text-xl leading-relaxed ">
+              <p className="text-gray-700 text-lg lg:text-xl leading-relaxed cursor-pointer">
                 I am <span className='text-blue-500 font-medium'>Talha Crafted</span>, a {age}-year-old student and passionate UI/UX designer and developer focused on creating beautiful,
                 functional, and user-centered digital experiences. As a young developer with a keen eye for detail
                 and a love for clean design, I strive to build interfaces that are both
@@ -85,7 +85,7 @@ function Aboutpage() {
               </p>
             </div>
           </div>
-          <div className="md:flex grid justify-center items-center  md:justify-center md:items-center gap-4 ">
+          <div className="md:flex grid justify-center items-center  md:justify-center md:items-center gap-4 cursor-pointer">
             <div className="bg-gradient-to-br to-blue-300 transition duration-200 hover:shadow-[0px_0px_15px_#003df5] md:mr-1.5 from-blue-700 p-4.5 pl-4 pt-3 pr-6 rounded-3xl text-white  shadow-[0px_0px_10px_#003df5] text-lg lg:text-xl">
               <div className='flex justify-start items-center mb-2'>
                 <img src={TechnicalImg} alt="Technical" className='h-8 w-8 md:h-9 md:w-9' />
@@ -103,14 +103,14 @@ function Aboutpage() {
               </ul>
             </div>
 
-            <div className="bg-gradient-to-br from-cyan-400 to-cyan-700   shadow-[0px_0px_10px_#00e0f0] hover:shadow-[0px_0px_15px_#00e0f0] md:ml-1.5 transition duration-200  rounded-3xl text-white p-4.5 pl-4 pt-3 pr-6 text-lg lg:text-xl">
+            <div className="bg-gradient-to-br cursor-pointer from-cyan-400 to-cyan-700   shadow-[0px_0px_10px_#00e0f0] hover:shadow-[0px_0px_15px_#00e0f0] md:ml-1.5 transition duration-200  rounded-3xl text-white p-4.5 pl-4 pt-3 pr-6 text-lg lg:text-xl">
               <div className='flex justify-start items-end mb-2.5'>
                 <img src={ProfessionalImg} alt="Professional" className='h-8 w-8 md:h-9 md:w-9' />
                 <h3 className="text-xl font-semibold ml-1.5">Professional Experience</h3>
               </div>
               <ul className="space-y-3">
                 {professionalExperience_items.map((item, index) => <div key={index}>
-                  <li className="flex items-center">
+                  <li className="flex items-center ">
                     <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
@@ -120,9 +120,9 @@ function Aboutpage() {
               </ul>
             </div>
           </div>
-          <div className='mt-6.5 mb-2'>
-            <div className='flex justify-center items-center'>
-              <div className="bg-white p-4 md:w-4xl w-5xl rounded-3xl pt-3.5 mb-2 shadow-[0px_0px_7px_#a5f8a7] hover:shadow-[0px_0px_12px_#a5f8a7] transition duration-200">
+          <div className='mt-6.5 mb-2 '>
+            <div className='flex justify-center items-center '>
+              <div className="bg-white p-4 md:w-4xl w-5xl rounded-3xl cursor-pointer pt-3.5 mb-2 shadow-[0px_0px_7px_#a5f8a7] hover:shadow-[0px_0px_12px_#a5f8a7] transition duration-200">
                 <div className='flex justify-start items-center mb-1.5'>
                   <img src={EducationImg} alt="Education" className='h-8 w-8' />
                   <h2 className="text-2xl font-semibold ml-1  text-green-500">
