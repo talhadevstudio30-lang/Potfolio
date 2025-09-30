@@ -99,3 +99,6 @@ body{
         @apply pt-16 sticky top-5 
     }
 }
+.heading-font{
+    font-family: "Roboto", sans-serif;
+}
