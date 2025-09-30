@@ -75,7 +75,7 @@ const Skillspage = () => {
     return (
         <>
             <div>
-                <h1 className=" text-4xl md:text-4xl lg:text-5xl font-semibold text-center  bg-gradient-to-br from-blue-400 pb-2.5 to-blue-500 bg-clip-text text-transparent" style={{ fontFamily: 'Roboto, sans-serif', fontWeight: '500' }}>
+                <h1 className=" text-4xl md:text-4xl lg:text-5xl font-semibold text-center  bg-gradient-to-br from-blue-400 pb-2.5 to-blue-500 bg-clip-text text-transparent" style={{ fontFamily: 'Roboto, sans-serif', fontWeight: '400' }}>
                     Skills
                 </h1>
                 <p className="text-center  text-lg md:text-xl lg:text-2xl mb-3 text-gray-600 pl-4 pr-4">
