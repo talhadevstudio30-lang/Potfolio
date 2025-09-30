@@ -87,7 +87,7 @@ const Skillspage = () => {
                 {items.map((item, index) => <div key={index}>
                     <div className='p-3.5 sm:p-5 grid justify-center items-center flex-wrap'>
                         <div>
-                            <div className={`rounded-3xl cursor-pointer grid justify-center items-center min-h-max border-2 ${item.skill_hover_theme}  ${item.skill_theme} w-50 sm:min-h-max sm:w-55 pb-6 pt-4.5 `}>
+                            <div className={`rounded-3xl cursor-pointer grid justify-center items-center min-h-max border-2 ${item.skill_hover_theme}  ${item.skill_theme} w-50 sm:min-h-max sm:w-55 pb-6 pt-4.5 sm:pb-8 sm:pt-6`}>
                                 <div className='w-full h-full grid justify-center items-center'>
                                     <div className='grid justify-center items-center'>
                                         <img
