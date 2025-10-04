@@ -28,7 +28,7 @@ const App = () => {
 
     const alreadyShown = localStorage.getItem("birthdayAlertShown");
 
-    if (month === 10 && date === 4 && !alreadyShown) {
+    if (month === 10 && date === 20 && !alreadyShown) {
       console.log("Today is the birthday 🎂 of developer");
       setAlertpage(true);
       setmain_potfolio(false);
