@@ -105,7 +105,7 @@ function Header() {
                 </header>
 
             </div>
-            <div className={`transition delay-100 duration-100 ease ${opacityanimation}`}>
+            <div className={`transition delay-50 duration-50 ease ${opacityanimation}`}>
                 {secNavbar &&
                     <div>
                         <Responsivenevbar opacityanimation={opacityanimation} setopacityanimation={setopacityanimation} />
