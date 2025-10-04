@@ -22,8 +22,8 @@ const Alertpage = ({ cancel_button }) => {
                         {/* Subtext */}
                         <p className="text-gray-600 mb-8 leading-relaxed">
                             Today is a special day — the developer’s birthday! 🧑‍💻🎂
-                            Born on <span className="text-blue-600 font-semibold">10 October 2008</span>,
-                            now turning <span className="text-cyan-500 font-semibold">{age} in {new Date().getFullYear()}</span>.
+                            Born on <span className="text-blue-500 font-semibold">10 October 2008</span>,
+                            now turning <span className="text-cyan-400 font-semibold">{age} in {new Date().getFullYear()}</span>.
                             This milestone celebrates growth, passion, and dedication to innovation.
                             May it bring new achievements, creativity, and joyful moments — both in code and in life. 🎉✨
                         </p>
@@ -36,7 +36,7 @@ const Alertpage = ({ cancel_button }) => {
                             <button className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-6 py-3 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105  transition font-medium sm:w-[45%] ">
                                 Wish Now
                             </button>
-                            <button className="bg-white border-2 border-blue-400 text-blue-600 px-6 py-3 rounded-2xl shadow-lg hover:bg-cyan-100 sm:w-[45%]  hover:scale-105 transition font-medium" onClick={cancel_button}>
+                            <button className="bg-white border-2 hover:border-cyan-400 hover:text-cyan-500 border-blue-400 text-blue-600 px-6 py-3 rounded-2xl shadow-lg hover:bg-cyan-50 sm:w-[45%]  hover:scale-105 transition font-medium" onClick={cancel_button}>
                                 Wish Later
                             </button>
                         </div>
