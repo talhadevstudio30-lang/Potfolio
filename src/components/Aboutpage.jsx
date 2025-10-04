@@ -1,74 +1,52 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import TechnicalImg from '../images/Technical.png';
 import ProfessionalImg from '../images/Professional.png';
 import EducationImg from '../images/Education.png';
 
 function Aboutpage() {
+  const technicalSkills_items = [
+    { skill: "React.js & Next.js Development" },
+    { skill: "Tailwind CSS & Material UI" },
+    { skill: "JavaScript & TypeScript" },
+    { skill: "Responsive Web Design" },
+    { skill: "Github & Vercel" },
+  ];
 
+  const professionalExperience_items = [
+    { skill: `${new Date().getFullYear() - 2023} + Years Frontend Development` },
+    { skill: "Modern Web Applications" },
+    { skill: "Performance Optimization" },
+    { skill: "Team Collaboration" },
+    { skill: "Modern UI/UX designs" },
+  ];
 
-  const technicalSkills_items = [{
-    skill: "React.js & Next.js Development",
-
-  },
-  {
-    skill: `Tailwind CSS & Material UI`,
-
-  },
-  {
-    skill: "JavaScript & TypeScript",
-
-  },
-  {
-    skill: "Responsive Web Design",
-
-  },
-  {
-    skill: "Github & Vercel",
-
-  },
-  ]
-  const professionalExperience_items = [{
-    skill: `${new Date().getFullYear() - 2023} + Years Frontend Development`,
-  },
-  {
-    skill: "Modern Web Applications",
-  },
-  {
-    skill: "Performance Optimization",
-  },
-  {
-    skill: "Team Collaboration",
-  },
-  {
-    skill: "Modern UI/UX designs",
-  },
-  ]
-
+  // ✅ Age calculation function
   const calculateAge = (dob) => {
     const today = new Date();
     const birthDate = new Date(dob);
-    let age = (new Date().getFullYear() - 2) - birthDate.getFullYear();
+    let age = today.getFullYear() - birthDate.getFullYear();
 
-    // Adjust if birthday hasn’t happened yet this year
     const hasBirthdayPassed =
       today.getMonth() > birthDate.getMonth() ||
       (today.getMonth() === birthDate.getMonth() &&
         today.getDate() >= birthDate.getDate());
 
     if (!hasBirthdayPassed) {
-      age += 1;
+      age -= 1;
     }
 
     return age;
   };
-  const dob = "2008-10-20"; // YYYY-MM-DD format
+
+  const dob = "2008-10-20"; // YYYY-MM-DD
   const age = calculateAge(dob);
+
   return (
     <>
       <div className='w-full flex pt-0.5 sm:pt-1.5 justify-center items-center pb-10 md:pb-20'>
         <div className="Name bg-blue-50 p-3 md:p-4 rounded-3xl pb-1.5 w-[98%]  shadow-[0px_0px_7px_#0080ff]">
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-5 bg-gradient-to-br from-blue-500  pb-2.5 to-cyan-400 bg-clip-text text-transparent mt-2" style={{ fontFamily: 'Roboto, sans-serif', fontWeight: '400' }}>
+          <h1 className="text-4xl md:text-4xl lg:text-5xl font-semibold text-center mb-5 bg-gradient-to-br from-blue-500  pb-2.5 to-cyan-400 bg-clip-text text-transparent mt-2" style={{ fontFamily: 'Roboto, sans-serif', fontWeight: '400' }}>
             Hey I'm
             Talha Javed
           </h1>
@@ -129,11 +107,11 @@ function Aboutpage() {
                     Education
                   </h2>
                 </div>
-                
-                <p className="text-gray-700 text-lg lg:text-xl leading-relaxed">
-                Hey I’m a passionate student with a keen interest in computer science and digital creativity. Ever since I discovered the world of technology, I’ve been captivated by the way ideas can come to life through code, design, and innovation. Whether it's building applications, exploring new tools, or experimenting with creative solutions, I find joy in turning imagination into reality through technology."
 
-Would you like to expand this into a personal statement, portfolio bio, or maybe a LinkedIn summary?
+                <p className="text-gray-700 text-lg lg:text-xl leading-relaxed">
+                  Hey I’m a passionate student with a keen interest in computer science and digital creativity. Ever since I discovered the world of technology, I’ve been captivated by the way ideas can come to life through code, design, and innovation. Whether it's building applications, exploring new tools, or experimenting with creative solutions, I find joy in turning imagination into reality through technology."
+
+                  Would you like to expand this into a personal statement, portfolio bio, or maybe a LinkedIn summary?
 
                 </p>
                 <p className="text-gray-700 text-lg lg:text-xl leading-relaxed mt-2.5">

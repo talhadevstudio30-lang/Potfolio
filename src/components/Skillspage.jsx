@@ -75,7 +75,7 @@ const Skillspage = () => {
     return (
         <>
             <div>
-                <h1 className=" text-4xl md:text-4xl lg:text-5xl font-semibold text-center  bg-gradient-to-br from-blue-400 pb-2.5 to-blue-500 bg-clip-text text-transparent" style={{ fontFamily: 'Roboto, sans-serif', fontWeight: '400' }}>
+                <h1 className="text-4xl sm:text-5xl lg:text-5xl font-semibold text-center  bg-gradient-to-br from-blue-400 pb-2.5 to-blue-500 bg-clip-text text-transparent" style={{ fontFamily: 'Roboto, sans-serif', fontWeight: '400' }}>
                     Skills
                 </h1>
                 <p className="text-center  text-lg md:text-xl lg:text-2xl mb-3 text-gray-600 pl-4 pr-4">
@@ -87,18 +87,18 @@ const Skillspage = () => {
                 {items.map((item, index) => <div key={index}>
                     <div className='p-3.5 sm:p-5 grid justify-center items-center flex-wrap'>
                         <div>
-                            <div className={`rounded-3xl cursor-pointer grid justify-center items-center min-h-max border-2 ${item.skill_hover_theme}  ${item.skill_theme} w-50 sm:min-h-max sm:w-55 pb-6 pt-4.5 sm:pb-8 sm:pt-6`}>
+                            <div className={`rounded-3xl cursor-pointer grid justify-center items-center min-h-max border-2 ${item.skill_hover_theme}  ${item.skill_theme} w-42 sm:min-h-max sm:w-53 pb-6 pt-4.5 sm:pb-8 sm:pt-6`}>
                                 <div className='w-full h-full grid justify-center items-center'>
                                     <div className='grid justify-center items-center'>
                                         <img
                                             src={item.skill_image}
                                             alt="HTML Logo"
-                                            className={`${item.skill_image == `${viteLogo}` ? 'mt-0' : ''} h-30 w-30 sm:h-35 sm:w-35 lg:h-37 lg:w-37`}
+                                            className={`${item.skill_image == `${viteLogo}` ? 'mt-0' : ''} h-24 w-24 sm:h-29 sm:w-29 lg:h-33 lg:w-33`}
 
                                         />
                                     </div>
                                     <div className=''>
-                                        <h1 className={`${item.skill_title_theme} text-center text-3xl pl-3.5 pr-3.5  ${item.skill_title == 'Vite + React.js' ? 'mt-1' : ''}`}>{item.skill_title}</h1>
+                                        <h1 className={`${item.skill_title_theme} text-center text-2xl sm:text-3xl pl-3.5 pr-3.5  ${item.skill_title == 'Vite + React.js' ? 'mt-1' : ''}`}>{item.skill_title}</h1>
                                     </div>
                                 </div>
 
