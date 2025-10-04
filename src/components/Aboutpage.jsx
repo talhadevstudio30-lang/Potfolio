@@ -40,7 +40,7 @@ function Aboutpage() {
 
   const dob = "2008-10-20"; // YYYY-MM-DD
   const age = calculateAge(dob);
-
+  
   return (
     <>
       <div className='w-full flex pt-0.5 sm:pt-1.5 justify-center items-center pb-10 md:pb-20'>
