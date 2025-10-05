@@ -23,7 +23,7 @@ function Frontpageinformation() {
                         <div className="home-page-title-skill-container pl-3.5 text-start">
                             <h3 className="text-xl md:text-2xl tracking-tight text-gray-800">
                                 <span className='mt-1 ml-1.5'>And I'm a{" "}</span>
-                                <span className="relative mt-1.5 ml-1 inline-block px-3 py-1.5 rounded-2xl font-medium text-transparent bg-clip-text bg-gradient-to-r  from-cyan-400 via-blue-500 to-purple-600 animate-text-shimmer border-2 border-blue-300 shadow-lg hover:shadow-blue-400/50 transition text-center duration-200 mr-6">
+                                <span className="relative mt-1 ml-1 inline-block px-3 py-1.5 rounded-2xl font-medium text-transparent bg-clip-text bg-gradient-to-r  from-cyan-400 via-blue-500 to-purple-600 animate-text-shimmer border-2 border-blue-300 shadow-lg hover:shadow-blue-400/50 transition text-center duration-200 mr-6">
                                     Frontend Developer
                                     {/* Glow Effect */}
                                     <span className="absolute inset-0 rounded-2xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 opacity-30 blur-lg"></span>
