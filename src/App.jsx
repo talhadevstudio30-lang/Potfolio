@@ -47,20 +47,23 @@ const App = () => {
 
   return (
     <>
+      {/* Displays a special message that only appears on significant or special days */}
       {alertpage && (
         <div>
-          <Alertpage 
-            wishlater_button={wishlater_button} 
-            wishnow_button={wishnow_button} 
+          <Alertpage
+            wishlater_button={wishlater_button}
+            wishnow_button={wishnow_button}
           />
         </div>
       )}
 
+      {/* This is main portfolio content that is shown on regular days or after the alert has been dismissed. */}
       {main_potfolio && (
         <>
           <div>
             <Frontpage />
           </div>
+          {/* These elements are enclosed within a single div, serving as the sidebar sections */}
           <div>
             <Secondpage />
             <Skillspage />
