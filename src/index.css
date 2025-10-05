@@ -66,6 +66,9 @@ body{
     .dev-image{
         @apply h-62 w-62 
     }
+    .home-page-title-skill-container{
+   @apply ml-1.5
+}
 }
 @media only screen and (max-height:650px) {
     .front-page-container {

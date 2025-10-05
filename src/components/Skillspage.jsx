@@ -83,13 +83,18 @@ const Skillspage = () => {
     return (
         <>
             <div>
-                <h1 className="text-4xl sm:text-5xl lg:text-5xl font-semibold text-center  bg-gradient-to-br from-blue-400 pb-2.5 to-blue-500 bg-clip-text text-transparent" style={{ fontFamily: 'Roboto, sans-serif', fontWeight: '400' }}>
-                    Skills
-                </h1>
-                <p className="text-center  text-lg md:text-xl lg:text-2xl mb-3 text-gray-600 pl-4 pr-4">
-                    Here are the technologies and tools I work with to design and develop
-                    modern, responsive, and efficient web applications.
+                <div>
+                    <h1
+                        className="relative text-4xl sm:text-5xl lg:text-6xl font-semibold text-center bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent tracking-tight drop-shadow-[0_0_20px_rgba(59,130,246,0.6)] animate-pulse"
+                        style={{ fontFamily: 'Roboto, sans-serif', zIndex: -1 }}
+                    >
+                        Skills
+                    </h1>
+                </div>
+                <p className="text-center text-lg md:text-xl lg:text-2xl max-w-2xl mx-auto mt-3 mb-7 text-gray-700 leading-relaxed px-6 backdrop-blur-sm bg-white/30 rounded-2xl relative  animate-fade-in-up" style={{ zIndex: -1 }}>
+                    🚀 Here are the technologies and tools I rely on to craft sleek, responsive, and performance-driven web applications. From structuring layouts and styling interfaces to adding interactivity, version control, and fast builds, each tool plays a role in creating apps that don’t just work flawlessly — they wow users.
                 </p>
+
             </div>
             <div className='flex justify-center  items-center flex-wrap'>
                 {items.map((item, index) => <div key={index}>
@@ -102,9 +107,9 @@ const Skillspage = () => {
                                             src={item.skill_image}
                                             alt="HTML Logo"
                                             className={`${item.skill_image == `${viteLogo}` ? 'mt-0' : ''} h-24 w-24 sm:h-29  sm:w-29 lg:h-33 transform hover:scale-110 active:scale-105 transition lg:w-33`
-                                        }
+                                            }
 
-                                        onClick={() => alert(`${item.skill_discription}`)}/>
+                                            onClick={() => alert(`${item.skill_discription}`)} />
                                     </div>
                                     <div className=''>
                                         <h1 className={`${item.skill_title_theme} text-center text-2xl sm:text-3xl pl-3.5 pr-3.5  ${item.skill_title == 'Vite + React.js' ? 'mt-1' : ''}`}>{item.skill_title}</h1>

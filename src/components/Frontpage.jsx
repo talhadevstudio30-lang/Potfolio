@@ -15,9 +15,9 @@ function Frontpage() {
                     <Frontpageinformation />
                 </div>
             </div>
+ 
 
-
-        </>
+        </> 
     );
 }
 

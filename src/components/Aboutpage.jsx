@@ -40,13 +40,13 @@ function Aboutpage() {
 
   const dob = "2008-10-20"; // YYYY-MM-DD
   const age = calculateAge(dob);
-  
+
   return (
     <>
       <div className='w-full flex pt-0.5 sm:pt-1.5 justify-center items-center pb-10 md:pb-20'>
         <div className="Name bg-blue-50 p-3 md:p-4 rounded-3xl pb-1.5 w-[98%]  shadow-[0px_0px_7px_#0080ff]">
-
-          <h1 className="text-4xl md:text-4xl lg:text-5xl font-semibold text-center mb-5 bg-gradient-to-br from-blue-500  pb-2.5 to-cyan-400 bg-clip-text text-transparent mt-2" style={{ fontFamily: 'Roboto, sans-serif', fontWeight: '400' }}>
+          <h1
+            className="relative text-4xl sm:text-5xl lg:text-6xl font-semibold text-center bg-gradient-to-r from-cyan-400 via-blue-500 to-cyan-500 bg-clip-text text-transparent tracking-tight drop-shadow-[0_0_20px_rgba(59,130,246,0.6)] animate-pulse mb-5.5 p-2.5" >
             Hey I'm
             Talha Javed
           </h1>
