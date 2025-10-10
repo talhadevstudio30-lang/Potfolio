@@ -91,7 +91,6 @@ const Skillspage = () => {
     return (
         <>
             <div>
-                <a href="mailto:talhadevstudio30@gmail.com" className='border-2 border-red-500'>email</a>
                 <div data-aos="zoom-in" data-aos-delay="200">
                     <h1
                         className="relative text-4xl sm:text-5xl lg:text-6xl font-semibold text-center bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent tracking-tight drop-shadow-[0_0_20px_rgba(59,130,246,0.6)] "
