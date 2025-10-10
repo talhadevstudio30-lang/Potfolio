@@ -46,8 +46,8 @@ function Aboutpage() {
 useEffect(() => {
     AOS.init({
       easing: "ease-in-out", // Animation easing
-      once: true, // Whether animation should happen only once
-      mirror: false, // Animate elements while scrolling past them
+      once: false, // Whether animation should happen only once
+      mirror: true, // Animate elements while scrolling past them
     });
   }, []);
 
@@ -56,11 +56,11 @@ useEffect(() => {
     <>
       <div className='w-full flex pt-0.5 sm:pt-1.5 justify-center items-center pb-10 md:pb-20' >
         <div className="Name bg-blue-50 p-3 md:p-4 rounded-3xl pb-1.5 w-[98%]  shadow-[0px_0px_7px_#0080ff]">
-          <h1 className="text-4xl tracking-tight md:text-4xl lg:text-5xl text-center mb-2.5 bg-gradient-to-r from-blue-500  pb-2.5 to-cyan-400 bg-clip-text text-transparent mt-2" style={{ fontFamily: 'Roboto, sans-serif', fontWeight: '400', }}  data-aos="fade-up" data-aos-delay="400">
+          <h1 className="text-4xl tracking-tight md:text-4xl lg:text-5xl text-center mb-2.5 bg-gradient-to-r from-blue-500  pb-2.5 to-cyan-400 bg-clip-text text-transparent mt-2" style={{ fontFamily: 'Roboto, sans-serif', fontWeight: '400', }}  data-aos="fade-up" data-aos-delay="300">
             Hey I'm
             Talha Javed
           </h1>
-          <div className='flex justify-center items-center' data-aos="fade-up" data-aos-delay="300">
+          <div className='flex justify-center items-center' data-aos="fade-up" data-aos-delay="200">
             <div className="bg-white p-4 md:w-4xl w-5xl rounded-3xl pt-3 mb-6 shadow-[0px_0px_8px_#70b5ff] hover:shadow-[0px_0px_12px_#70b5ff] transition duration-200">
               <h2 className="text-2xl font-semibold text-blue-500  mb-1.5">
                 Welcome to My Creative Space
@@ -73,7 +73,7 @@ useEffect(() => {
               </p>
             </div>
           </div>
-          <div className="md:flex grid justify-center items-center  md:justify-center md:items-center gap-4 cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+          <div className="md:flex grid justify-center items-center  md:justify-center md:items-center gap-4 cursor-pointer" data-aos="fade-up" data-aos-delay="200">
             <div className="bg-gradient-to-br to-blue-300 transition duration-200 hover:shadow-[0px_0px_15px_#003df5] md:mr-1.5 from-blue-700 p-4.5 pl-4 pt-3 pr-6 rounded-3xl text-white  shadow-[0px_0px_10px_#003df5] text-lg lg:text-xl">
               <div className='flex justify-start items-center mb-2'>
                 <img src={TechnicalImg} alt="Technical" className='h-8 w-8 md:h-9 md:w-9' />
@@ -91,7 +91,7 @@ useEffect(() => {
               </ul>
             </div>
 
-            <div className="bg-gradient-to-br cursor-pointer from-cyan-400 to-cyan-700   shadow-[0px_0px_10px_#00e0f0] hover:shadow-[0px_0px_15px_#00e0f0] md:ml-1.5 transition duration-200  rounded-3xl text-white p-4.5 pl-4 pt-3 pr-6 text-lg lg:text-xl" data-aos="fade-up" data-aos-delay="300">
+            <div className="bg-gradient-to-br cursor-pointer from-cyan-400 to-cyan-700   shadow-[0px_0px_10px_#00e0f0] hover:shadow-[0px_0px_15px_#00e0f0] md:ml-1.5 transition duration-200  rounded-3xl text-white p-4.5 pl-4 pt-3 pr-6 text-lg lg:text-xl" data-aos="fade-up" data-aos-delay="200">
               <div className='flex justify-start items-end mb-2.5'>
                 <img src={ProfessionalImg} alt="Professional" className='h-8 w-8 md:h-9 md:w-9' />
                 <h3 className="text-xl font-semibold ml-1.5">Professional Experience</h3>
@@ -108,7 +108,7 @@ useEffect(() => {
               </ul>
             </div>
           </div>
-          <div className='mt-6.5 mb-2' data-aos="fade-up" data-aos-delay="300">
+          <div className='mt-6.5 mb-2' data-aos="fade-up" data-aos-delay="200">
             <div className='flex justify-center items-center '>
               <div className="bg-white p-4 md:w-4xl w-5xl rounded-3xl cursor-pointer pt-3.5 mb-2 shadow-[0px_0px_7px_#a5f8a7] hover:shadow-[0px_0px_12px_#a5f8a7] transition duration-200">
                 <div className='flex justify-start items-center mb-1.5'>

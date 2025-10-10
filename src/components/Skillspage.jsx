@@ -1,5 +1,5 @@
 
-import { useEffect } from 'react'
+import { useEffect, react } from 'react'
 import htmlLogo from '../skills-images/HTML.png';
 import cssLogo from '../skills-images/Css.png';
 import jsLogo from '../skills-images/JS.png';
@@ -10,8 +10,15 @@ import Git from '../skills-images/Git.png';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
 const Skillspage = () => {
+
+    useEffect(() => {
+        AOS.init({
+            easing: "ease-in-out", // Animation easing
+            once: false, // Whether animation should happen only once
+            mirror: true, // Animate elements while scrolling past them
+        });
+    }, []);
 
     const items = [
         {
@@ -80,32 +87,25 @@ const Skillspage = () => {
         },
     ]
 
-    useEffect(() => {
-        AOS.init({
-            easing: "ease-in-out", // Animation easing
-            once: false, // Whether animation should happen only once
-            mirror: true, // Animate elements while scrolling past them
-        });
-    }, []);
 
     return (
         <>
             <div>
-                <div>
+                <div data-aos="zoom-in" data-aos-delay="200">
                     <h1
                         className="relative text-4xl sm:text-5xl lg:text-6xl font-semibold text-center bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent tracking-tight drop-shadow-[0_0_20px_rgba(59,130,246,0.6)] "
-                        style={{ fontFamily: 'Roboto, sans-serif' }} data-aos="zoom-out" data-aos-delay="300"
+                        style={{ fontFamily: 'Roboto, sans-serif', zIndex: -1 }} 
                     >
                         Skills
                     </h1>
                 </div>
-                <p className="text-center text-lg md:text-xl lg:text-2xl max-w-2xl mx-auto mt-3 mb-7 text-gray-700 leading-relaxed px-6 backdrop-blur-sm bg-white/30 rounded-2xl relative " data-aos="zoom-out" data-aos-delay="300" >
+                <p className="text-center text-lg md:text-xl lg:text-2xl max-w-2xl mx-auto mt-3 mb-7 text-gray-700 leading-relaxed px-6 backdrop-blur-sm bg-white/30 rounded-2xl relative  animate-fade-in-up" style={{ zIndex: -1 }} data-aos="zoom-in" data-aos-delay="200">
                     🚀 Here are the technologies and tools I rely on to craft sleek, responsive, and performance-driven web applications. From structuring layouts and styling interfaces to adding interactivity, version control, and fast builds, each tool plays a role in creating apps that don’t just work flawlessly — they wow users.
                 </p>
 
             </div>
             <div className='flex justify-center  items-center flex-wrap'>
-                {items.map((item, index) => <div key={index}  data-aos="fade-up" data-aos-delay="200" >
+                {items.map((item, index) => <div key={index} data-aos="zoom-in" data-aos-delay="200">
                     <div className='p-3.5 sm:p-5 grid justify-center items-center flex-wrap'>
                         <div>
                             <div className={`rounded-3xl cursor-pointer grid justify-center items-center min-h-max border-2 ${item.skill_hover_theme}  ${item.skill_theme} w-42 sm:min-h-max sm:w-53 pb-6 pt-4.5 sm:pb-8 sm:pt-6`}>

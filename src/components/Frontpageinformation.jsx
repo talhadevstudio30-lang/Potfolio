@@ -8,8 +8,8 @@ function Frontpageinformation() {
       useEffect(() => {
         AOS.init({
           easing: "ease-in-out", // Animation easing
-          once: true, // Whether animation should happen only once
-          mirror: false, // Animate elements while scrolling past them
+          once: false, // Whether animation should happen only once
+          mirror: true, // Animate elements while scrolling past them
         });
       }, []);
 
