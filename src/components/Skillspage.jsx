@@ -105,7 +105,7 @@ const Skillspage = () => {
 
             </div>
             <div className='flex justify-center  items-center flex-wrap'>
-                {items.map((item, index) => <div key={index} data-aos="zoom-in" data-aos-delay="200">
+                {items.map((item, index) => <div key={index} data-aos="zoom-in" data-aos-delay="100">
                     <div className='p-3.5 sm:p-5 grid justify-center items-center flex-wrap'>
                         <div>
                             <div className={`rounded-3xl cursor-pointer grid justify-center items-center min-h-max border-2 ${item.skill_hover_theme}  ${item.skill_theme} w-42 sm:min-h-max sm:w-53 pb-6 pt-4.5 sm:pb-8 sm:pt-6`}>
