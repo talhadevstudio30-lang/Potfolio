@@ -1,4 +1,4 @@
-import React from "react";
+import {useEffect} from "react";
 import developerImage from '../images/developer-image.jpg';
 import homeicon from '../images/download (2).png';
 import abouticon from '../images/download (5).png';
@@ -6,13 +6,24 @@ import skillsicon from '../images/download.png';
 import projectsicon from '../images/download (6).png';
 import contactsicon from '../images/download (4).png';
 import crossicon from '../images/download (1).png';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Sidebar = ({ SidebarMenuBtn, SideMenuCrossBtn, SideMenuCrossBtn_style }) => {
+
+   useEffect(() => {
+    AOS.init({
+      easing: "ease-in-out", // Animation easing
+      once: true, // Whether animation should happen only once
+      mirror: false, // Animate elements while scrolling past them
+    });
+  }, []);
+
   return (
     <>
-      <div className="relative ml-1.5">
+      <div className="relative ml-1.5" >
         <div className="absolute bottom-3.5 flex flex-wrap cursor-pointer">
-          <div className={`w-auto h-auto mt-2.5 hover:shadow-[0px_0px_10px_#7abdff] shadow-[0px_0px_5px_#7abdff] flex justify-start p-1.5 items-center ml-1.5  rounded-2xl bg-blue-100/40 hover:bg-blue-200/30 backdrop-blur-xs focus:backdrop-blur-xl hover:backdrop-blur-xl transition-all duration-300`} onClick={SidebarMenuBtn} tabIndex={0} >
+          <div className={`w-auto h-auto mt-2.5 hover:shadow-[0px_0px_10px_#7abdff] shadow-[0px_0px_5px_#7abdff] flex justify-start p-1.5 items-center ml-1.5  rounded-2xl bg-blue-100/40 hover:bg-blue-200/30 backdrop-blur-xs focus:backdrop-blur-xl hover:backdrop-blur-xl transition-all duration-300`} onClick={SidebarMenuBtn} tabIndex={0} data-aos="zoom-in" data-aos-delay="100">
             <img src={developerImage} alt="Developer" className=" h-9 w-9 md:h-13 md:w-13 rounded-full" />
             <h1 className="text-[#2f94f9] text-x ml-2 mr-1 sm:text-xl">Talha Javed</h1>
           </div>

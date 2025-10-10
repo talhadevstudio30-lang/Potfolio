@@ -18,7 +18,7 @@ const Secondpage = () => {
 
     return (
         <>
-            <div className='SideBarMenu sticky md:top-10 '>
+            <div className='SideBarMenu sticky md:top-10 '  style={{zIndex : '1',}}>
                 <Sidebar SidebarMenuBtn={SidebarMenuBtn} SideMenuCrossBtn={SideMenuCrossBtn} SideMenuCrossBtn_style={SideMenuCrossBtn_style} />
             </div>
             <div id='about'>
