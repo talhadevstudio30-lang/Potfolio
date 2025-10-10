@@ -38,7 +38,7 @@ function Header() {
                         </div>
                         {/* Menu */}
                         <nav className='pr-2.5 sm:flex lg:text-xl hidden'>
-                            <ul className="flex text-white space-x-4 font-normal">
+                            <ul className="flex text-white space-x-3 font-normal">
                                 <li>
                                     <a
                                         href="#home"
