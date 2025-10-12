@@ -23,19 +23,19 @@ const Sidebar = ({ SidebarMenuBtn, SideMenuCrossBtn, SideMenuCrossBtn_style }) =
     <>
       <div className="relative ml-1.5" >
         <div className="absolute bottom-3.5 flex flex-wrap cursor-pointer">
-          <div className={`w-auto h-auto mt-2.5 hover:shadow-[0px_0px_10px_#7abdff] shadow-[0px_0px_5px_#7abdff] flex justify-start p-1.5 items-center ml-1.5  rounded-2xl bg-blue-100/40 hover:bg-blue-200/30 backdrop-blur-xs focus:backdrop-blur-xl hover:backdrop-blur-xl transition-all duration-300`} onClick={SidebarMenuBtn} tabIndex={0} data-aos="zoom-in" data-aos-delay="100">
-            <img src={developerImage} alt="Developer" className=" h-9 w-9 md:h-13 md:w-13 rounded-full" />
+          <div className={`w-auto h-auto mt-2.5 hover:shadow-[0px_0px_10px_#7abdff] shadow-[0px_0px_5px_#7abdff] flex justify-start p-1.5 items-center ml-1.5  rounded-3xl bg-blue-100/40 hover:bg-blue-200/30 backdrop-blur-xs focus:backdrop-blur-xl hover:backdrop-blur-xl transition-all duration-300`} onClick={SidebarMenuBtn} tabIndex={0} data-aos="zoom-in" data-aos-delay="100">
+             <img src={developerImage} alt="Developer" className=" h-9 w-9 md:h-13 md:w-13 rounded-full" />
             <h1 className="text-[#2f94f9] text-x ml-2 mr-1 sm:text-xl">Talha Javed</h1>
           </div>
-          <div className={`w-auto h-auto hover:shadow-[0px_0px_10px_#7abdff] shadow-[0px_0px_5px_#7abdff] flex justify-start p-1.5 items-center ml-2.5  rounded-2xl bg-blue-200/30 ${SideMenuCrossBtn_style} mt-2.5 backdrop-blur-xs hover:backdrop-blur-xl transition duration-200`} onClick={SideMenuCrossBtn} >
-            <img src={crossicon} alt="" className="h-8 w-8 md:h-9 md:w-9" />
+          <div className={`w-auto h-auto hover:shadow-[0px_0px_10px_#7abdff] shadow-[0px_0px_5px_#7abdff] flex justify-start p-1.5 pl-3 pr-3 items-center ml-2.5  rounded-3xl bg-blue-200/30 ${SideMenuCrossBtn_style} mt-2.5 backdrop-blur-xs hover:backdrop-blur-xl transition duration-200`} onClick={SideMenuCrossBtn} >
+            <img src={crossicon} alt="" className="h-9 w-9 md:h-10 md:w-10" />
           </div>
         </div>
-        <div className={`absolute grid flex-wrap cursor-pointer hover:shadow-[0px_0px_10px_#7abdff] shadow-[0px_0px_5px_#7abdff] bg-blue-400/30  transition duration-200 ${SideMenuCrossBtn_style}  backdrop-blur-xs  rounded-2xl hover:backdrop-blur-xl focus:backdrop-blur-xl transition-all duration-300 ml-2.5 p-1`} tabIndex={0}>
+        <div className={`absolute grid flex-wrap cursor-pointer hover:shadow-[0px_0px_10px_#7abdff] shadow-[0px_0px_5px_#7abdff] bg-blue-400/30  transition duration-200 ${SideMenuCrossBtn_style}  backdrop-blur-xs  rounded-3xl hover:backdrop-blur-xl focus:backdrop-blur-xl transition-all duration-300 ml-2.5 p-1`} tabIndex={0}>
           <div className="w-auto h-auto mt-0.5 
              focus:bg-gray-100/40 
              hover:bg-gray-100/40 
-             rounded-2xl flex justify-center p-1.5 items-center  
+             rounded-3xl flex justify-center p-1.5 items-center  
              transition-all duration-300 
              focus:outline-none "
              tabIndex={0} >
@@ -45,7 +45,7 @@ const Sidebar = ({ SidebarMenuBtn, SideMenuCrossBtn, SideMenuCrossBtn_style }) =
           <div className="w-auto h-auto mt-0.5 
              focus:bg-gray-100/40 
              hover:bg-gray-100/40 
-             rounded-2xl flex justify-center p-1.5 items-center  
+             rounded-3xl flex justify-center p-1.5 items-center  
              transition-all duration-300 
              focus:outline-none "
              tabIndex={0} >
@@ -55,7 +55,7 @@ const Sidebar = ({ SidebarMenuBtn, SideMenuCrossBtn, SideMenuCrossBtn_style }) =
           <div className="w-auto h-auto mt-0.5 
              focus:bg-gray-100/40 
              hover:bg-gray-100/40 
-             rounded-2xl flex justify-center p-1.5 items-center  
+             rounded-3xl flex justify-center p-1.5 items-center  
              transition-all duration-300 
              focus:outline-none "
              tabIndex={0} >
@@ -66,7 +66,7 @@ const Sidebar = ({ SidebarMenuBtn, SideMenuCrossBtn, SideMenuCrossBtn_style }) =
             className="w-auto h-auto mt-0.5 
              focus:bg-gray-100/40 
              hover:bg-gray-100/40 
-             rounded-2xl flex justify-center p-1.5 items-center  
+             rounded-3xl flex justify-center p-1.5 items-center  
              transition-all duration-300 
              focus:outline-none "
             tabIndex={0}  // 👈 Makes the div focusable
@@ -84,7 +84,7 @@ const Sidebar = ({ SidebarMenuBtn, SideMenuCrossBtn, SideMenuCrossBtn_style }) =
              focus:bg-transparent 
              hover:bg-transparent
              bg-gray-100/40 
-             rounded-2xl flex justify-center p-1.5 items-center  
+             rounded-3xl flex justify-center p-1.5 items-center  
              transition-all duration-300 
              focus:outline-none "
              tabIndex={0} >

@@ -11,16 +11,7 @@ body{
       opacity: 10;
     }
 }
-.menu{
-    @apply  border-white w-full rounded-2xl text-center 
-}
-.menu{
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-}
-.menu:hover{
-    @apply delay-75 duration-300 bg-white text-blue-400 rounded-2xl 
-}
+
 .extra-icon{
     cursor: pointer;
 }
@@ -29,9 +20,7 @@ body{
     .extra-icon{
         @apply h-13 w-13
     }
-    .menu-button{
-        @apply h-7 w-7
-    }
+   
     .dev-image{
         @apply h-63 w-63
     }

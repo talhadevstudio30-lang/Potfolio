@@ -9,7 +9,7 @@ function Responsivenevbar() {
   return (
     <>
       <div className={`flex justify-center w-full mt-2.5 items-center absolute z-30 `}>
-        <div className=' shadow-[0px_0px_10px_#0080ff9b] backdrop-blur-xl mt-3  rounded-3xl w-[90%] ml-2 mr-2 from-[#0080ff9b] via-[#00bfff98] to-[#00ffddb1]  text-gray-950 sm:hidden bg-gradient-to-br flex-wrap'>
+        <div className=' shadow-[0px_0px_10px_#0080ff9b] backdrop-blur-xl mt-3  rounded-3xl w-[90%] ml-2 mr-2 from-[#0080ff9b] via-[#00bfff98] to-[#00ffddb1]  text-gray-950 md:hidden bg-gradient-to-br flex-wrap'>
           <div className="flex justify-center p-1.5 items-center flex-wrap text-white text-lg font-light">
             {/* Home */}
             <div>
