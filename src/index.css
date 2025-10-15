@@ -15,7 +15,6 @@ body{
 .extra-icon{
     cursor: pointer;
 }
-
 @media only screen and (max-width:450px) {
     .extra-icon{
         @apply h-13 w-13
@@ -25,8 +24,16 @@ body{
         @apply h-63 w-63
     }
     .Name{
+        margin-top: 1.5px;
+        font-size: 27.5px;
+        margin-right: 4px;
+    }
+}
+@media only screen and (max-width:347px) {
+    .Name{
         margin-top: 2px;
-        font-size: 22px;
+        font-size: 24px;
+        margin-right: 3px;
     }
 }
 .Name{
@@ -92,4 +99,20 @@ body{
 }
 .heading-font{
     font-family: "Roboto", sans-serif;
+}
+
+@media only screen and  (max-height:1043px) {
+    .SideBarStyle{
+        @apply  h-[85vh]
+    }
+}
+@media only screen and  (max-height:680px) {
+    .SideBarStyle{
+        @apply  h-auto
+    }
+}
+@media only screen and (max-height:1030px) {
+    .skillsection-container{
+        @apply overflow-hidden h-auto  
+    }
 }

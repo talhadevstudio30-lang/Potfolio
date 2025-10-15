@@ -1,104 +1,91 @@
-import {useEffect} from "react";
+// ⚛️ Importing React hooks and dependencies
+import { useEffect, useState } from "react";
 import developerImage from '../images/developer-image.jpg';
-import homeicon from '../images/download (2).png';
-import abouticon from '../images/download (5).png';
-import skillsicon from '../images/download.png';
-import projectsicon from '../images/download (6).png';
-import contactsicon from '../images/download (4).png';
 import crossicon from '../images/download (1).png';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Sidebar = ({ SidebarMenuBtn, SideMenuCrossBtn, SideMenuCrossBtn_style }) => {
+// 📁 Importing custom sidebar components
+import SmallDeviceSidemenu from "./SmallDeviceSidemenu";
+import LargeDeviceSidemenu from "./LargeDeviceSidemenu";
 
-   useEffect(() => {
+// 🚀 Component: Sidebar
+// 👉 Handles responsive side navigation for both small and large devices
+const Sidebar = () => {
+
+  // 🧠 Initialize AOS (Animate On Scroll) for smooth animations
+  useEffect(() => {
     AOS.init({
-      easing: "ease-in-out", // Animation easing
-      once: true, // Whether animation should happen only once
-      mirror: false, // Animate elements while scrolling past them
+      easing: "ease-in-out", // 🎢 Smooth easing animation
+      once: true,            // ✅ Animation runs only once per element
+      mirror: false,         // 🚫 No re-animation when scrolling back
     });
   }, []);
 
+  // 🧩 Component States
+  // 🎛️ Control visibility of small device side menu and large device side menu button
+  const [SideMenuCrossBtn_style, setSideMenuCrossBtn_style] = useState('hidden');  // ❌ Controls small device menu toggle
+  const [SidelargedeviceBtn_style, setSidelargedeviceBtn_style] = useState('block'); // 🖥️ Controls large device sidebar visibility
+
+  // 🎯 Function to toggle sidebar menus on click
+  const SidebarMenuBtn = () => {
+    // 🔄 Toggle small device menu visibility
+    setSideMenuCrossBtn_style((event) => (event === "block" ? "hidden" : "block"));
+    // 🔄 Toggle large device button visibility
+    setSidelargedeviceBtn_style((event) => (event === "block" ? "hidden" : "block"));
+  };
+
+  // 🧱 JSX Layout
   return (
     <>
-      <div className="relative ml-1.5" >
-        <div className="absolute bottom-3.5 flex flex-wrap cursor-pointer">
-          <div className={`w-auto h-auto mt-2.5 hover:shadow-[0px_0px_10px_#7abdff] shadow-[0px_0px_5px_#7abdff] flex justify-start p-1.5 items-center ml-1.5  rounded-3xl bg-blue-100/40 hover:bg-blue-200/30 backdrop-blur-xs focus:backdrop-blur-xl hover:backdrop-blur-xl transition-all duration-300`} onClick={SidebarMenuBtn} tabIndex={0} data-aos="zoom-in" data-aos-delay="100">
-             <img src={developerImage} alt="Developer" className=" h-9 w-9 md:h-13 md:w-13 rounded-full" />
-            <h1 className="text-[#2f94f9] text-x ml-2 mr-1 sm:text-xl">Talha Javed</h1>
-          </div>
-          <div className={`w-auto h-auto hover:shadow-[0px_0px_10px_#7abdff] shadow-[0px_0px_5px_#7abdff] flex justify-start p-1.5 pl-3 pr-3 items-center ml-2.5  rounded-3xl bg-blue-200/30 ${SideMenuCrossBtn_style} mt-2.5 backdrop-blur-xs hover:backdrop-blur-xl transition duration-200`} onClick={SideMenuCrossBtn} >
-            <img src={crossicon} alt="" className="h-9 w-9 md:h-10 md:w-10" />
-          </div>
-        </div>
-        <div className={`absolute grid flex-wrap cursor-pointer hover:shadow-[0px_0px_10px_#7abdff] shadow-[0px_0px_5px_#7abdff] bg-blue-400/30  transition duration-200 ${SideMenuCrossBtn_style}  backdrop-blur-xs  rounded-3xl hover:backdrop-blur-xl focus:backdrop-blur-xl transition-all duration-300 ml-2.5 p-1`} tabIndex={0}>
-          <div className="w-auto h-auto mt-0.5 
-             focus:bg-gray-100/40 
-             hover:bg-gray-100/40 
-             rounded-3xl flex justify-center p-1.5 items-center  
-             transition-all duration-300 
-             focus:outline-none "
-             tabIndex={0} >
-            <img src={homeicon} alt="" className="h-8 cursor-pointer w-8 md:h-9 md:w-9 " />
-            <h1 className="text-[#2f94f9] hover:text-[#51a3f5]  text-x ml-1 mr-1 sm:text-xl">Home</h1>
-          </div>
-          <div className="w-auto h-auto mt-0.5 
-             focus:bg-gray-100/40 
-             hover:bg-gray-100/40 
-             rounded-3xl flex justify-center p-1.5 items-center  
-             transition-all duration-300 
-             focus:outline-none "
-             tabIndex={0} >
-            <img src={abouticon} alt="" className=" h-8 w-8 cursor-pointer md:h-9 md:w-9 " />
-            <h1 className="text-[#2f94f9] text-x ml-1.5 mr-1 hover:text-[#51a3f5] sm:text-xl">About</h1>
-          </div>
-          <div className="w-auto h-auto mt-0.5 
-             focus:bg-gray-100/40 
-             hover:bg-gray-100/40 
-             rounded-3xl flex justify-center p-1.5 items-center  
-             transition-all duration-300 
-             focus:outline-none "
-             tabIndex={0} >
-            <img src={skillsicon} alt="" className=" h-8 w-8 cursor-pointer md:h-9 md:w-9 " />
-            <h1 className="text-[#2f94f9] text-x ml-1.5 mr-1 hover:text-[#51a3f5] sm:text-xl">Skills</h1>
-          </div>
+      {/* 🧍 Sidebar Main Wrapper */}
+      <div className="relative ml-1.5">
+
+        {/* 👇 Sidebar Button (Developer image + name) */}
+        <div className="absolute bottom-3.5 select-none flex flex-wrap cursor-pointer">
+          {/* 🧑‍💻 Sidebar Trigger Button */}
           <div
-            className="w-auto h-auto mt-0.5 
-             focus:bg-gray-100/40 
-             hover:bg-gray-100/40 
-             rounded-3xl flex justify-center p-1.5 items-center  
-             transition-all duration-300 
-             focus:outline-none "
-            tabIndex={0}  // 👈 Makes the div focusable
+            className={`w-auto h-auto mt-2.5 
+              hover:shadow-[0px_0px_10px_#7abdff] 
+              shadow-[0px_0px_5px_#7abdff] 
+              flex justify-start p-1.5 items-center ml-1.5  
+              rounded-3xl bg-blue-100/40 hover:bg-blue-200/30 
+              backdrop-blur-xs transition-all duration-300`}
+            onClick={SidebarMenuBtn}  // 🖱️ Toggles sidebar menu
+            tabIndex={0}
+            data-aos="zoom-in"
+            data-aos-delay="100"
           >
-            <img
-              src={projectsicon}
-              alt=""
-              className="h-8 w-8 cursor-pointer md:h-9 md:w-9"
-            />
-            <h1 className="text-[#2f94f9] text-x ml-1.5 mr-1 hover:text-[#51a3f5] sm:text-xl">
-              Projects
+            {/* 🖼️ Developer Avatar */}
+            <img src={developerImage} alt="Developer" className="h-9 w-9 md:h-13 md:w-13 rounded-full" />
+            
+            {/* 🧾 Developer Name */}
+            <h1 className="text-[#2f94f9] ml-2 mr-1 text-sm sm:text-xl [text-shadow:0_0_6px_#ffffff]">
+              Talha Javed
             </h1>
           </div>
-          <div className="w-auto h-auto mt-0.5 
-             focus:bg-transparent 
-             hover:bg-transparent
-             bg-gray-100/40 
-             rounded-3xl flex justify-center p-1.5 items-center  
-             transition-all duration-300 
-             focus:outline-none "
-             tabIndex={0} >
-            <img src={contactsicon} alt="" className=" h-9 w-9 cursor-pointer md:h-10 md:w-10 " />
-            <h1 className="text-[#2f94f9] text-x ml-1 mr-1 hover:text-[#51a3f5] sm:text-xl">Contact</h1>
-          </div>
-
         </div>
 
+        {/* 📱 Small Device Sidebar Menu */}
+        <div className={`${SideMenuCrossBtn_style} block md:hidden`}>
+          <SmallDeviceSidemenu 
+            SideMenuCrossBtn_style={SideMenuCrossBtn_style} 
+            setSideMenuCrossBtn_style={setSideMenuCrossBtn_style} 
+          />
+        </div>
 
+        {/* 💻 Large Device Sidebar Menu */}
+        <div className={`hidden md:block`} data-aos="fade-right" data-aos-delay="100">
+          <LargeDeviceSidemenu 
+            SidelargedeviceBtn_style={SidelargedeviceBtn_style} 
+            setSidelargedeviceBtn_style={setSidelargedeviceBtn_style}
+          />
+        </div>
 
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Sidebar;   
+// 🚀 Exporting Sidebar component for use in the main layout
+export default Sidebar;
