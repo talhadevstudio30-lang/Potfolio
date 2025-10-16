@@ -9,7 +9,7 @@ import exitIcon from '../images/download (7).png';
 import Resume from '../images/Resume.png'
 
 
-function LargeDeviceSidemenu({SidelargedeviceBtn_style}) {
+function LargeDeviceSidemenu({SideMenuCrossBtn_style}) {
 
     const [menubtnicon, setmenubtnicon] = useState(true);
     const [crossbtnicon, setcrossbtnicon] = useState(false);
@@ -37,7 +37,7 @@ function LargeDeviceSidemenu({SidelargedeviceBtn_style}) {
 
     return (
         <>
-            <div className={`absolute pb-2 cursor-pointer hover:shadow-[0px_0px_10px_#7abdff] shadow-[0px_0px_5px_#7abdff] bg-blue-100/40 backdrop-blur-sm rounded-3xl  focus:backdrop-blur-xl transition-all duration-300 select-none ml-2 block ${SidelargedeviceBtn_style} ${menustyle} `} >
+            <div className={`absolute pb-2 mt-0.5 cursor-pointer hover:shadow-[0px_0px_10px_#7abdff] shadow-[0px_0px_5px_#7abdff] bg-blue-100/40 backdrop-blur-sm rounded-3xl  focus:backdrop-blur-xl transition-all duration-300 select-none ml-1.5 block ${SideMenuCrossBtn_style} ${menustyle} `} >
                 <div className='SideBarStyle h-[90vh]' >
                     <div className='h-[10%]  grid justify-center items-start pt-1.5'>
                         <div className='bg-blue-400/20 rounded-2xl  hover:backdrop-blur-xl focus:backdrop-blur-xl pb-1.5 pt-1 transition-all duration-200 mt-1.5 pl-2 mb-4.5'>

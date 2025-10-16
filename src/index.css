@@ -85,16 +85,16 @@ body{
     }
 }
 .SideBarMenu{
-    @apply pt-12 sticky top-8 
+    @apply pt-12 sticky top-9 
 }
 @media only screen and (max-width:768px) {
     .SideBarMenu{
-        @apply pt-12 sticky top-5 
+        @apply pt-12 sticky top-7 
     }
 }
 @media only screen and (min-width:768px) {
     .SideBarMenu{
-        @apply pt-16 sticky top-5 
+        @apply pt-16 sticky top-5.5
     }
 }
 .heading-font{

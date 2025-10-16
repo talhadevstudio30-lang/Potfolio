@@ -5,6 +5,7 @@ import abouticon from '../images/download (5).png';
 import skillsicon from '../images/download.png';
 import projectsicon from '../images/download (6).png';
 import contactsicon from '../images/download (4).png';
+import Resume from '../images/Resume.png'
 
 // 📱 Component: SmallDeviceSidemenu
 // 👉 This component displays a mini side navigation bar optimized for small devices.
@@ -26,7 +27,7 @@ function SmallDeviceSidemenu() {
 
                     {/* 🏠 Home Button */}
                     <div
-                        className="w-auto h-auto mt-0.5 
+                        className="w-auto h-auto  
                             focus:bg-gray-100/40 hover:bg-gray-100/40 
                             rounded-3xl flex justify-center p-1.5 items-center  
                             transition-all duration-200 [text-shadow:0_0_5px_#ffffff]
@@ -88,8 +89,26 @@ function SmallDeviceSidemenu() {
                         <img src={contactsicon} alt="Contact Icon" className="h-9 w-9 cursor-pointer md:h-10 md:w-10" />
                         <h1 className="text-[#2f94f9] text-x ml-1 mr-1 hover:text-[#51a3f5] sm:text-xl">Contact</h1>
                     </div>
-
-                </div>
+                    {/* Resume Button */}
+                  
+                        <div
+                            className="w-auto h-auto mt-1
+                                                         focus:bg-transparent 
+                                                         hover:bg-transparent
+                                                         bg-indigo-500/20 
+                                                         rounded-full flex justify-center p-1.5 items-center  
+                                                         transition-all duration-200  pl-3 pr-3 [text-shadow:0_0_5px_#ffffff]
+                                                         focus:outline-none "
+                            tabIndex={0}  // 👈 Makes the div focusable
+                        >
+                            <img
+                                src={Resume}
+                                alt=""
+                                className="h-8 w-8 cursor-pointer md:h-9 md:w-9"
+                            />
+                            <h1 className={`text-indigo-500 hover:text-indigo-400 text-x ml-2 mr-1 sm:text-xl`}>Resume</h1>
+                        </div>
+                    </div>
             </div>
         </>
     );

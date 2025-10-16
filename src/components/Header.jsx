@@ -1,7 +1,7 @@
 
 import React, { useState , useEffect } from 'react';
 import Responsivenevbar from './Responsivenevbar';
-import shortIcon from '../images/short-icon.png';
+import ResumeIcon from '../images/Resume.png';
 import menuIcon from '../images/download (8).png';
 import exitIcon from '../images/download (7).png';
 import AOS from "aos";
@@ -82,7 +82,7 @@ function Header() {
                                       
                                         <a
                                         href=""
-                                        className={`px-2 py-2 m-1.5 rounded-full transition-all duration-300 ease-in-out hover:shadow-[0px_0px_10px_white] focus:outline-none focus:ring bg-white text-[#00e2c4a7] shadow-[0px_0px_5px_white] flex justify-center items-center focus:ring-white focus:ring-offset-2`}
+                                        className={`px-2 py-2 m-1.5 rounded-full transition-all duration-300 ease-in-out hover:shadow-[0px_0px_10px_white] focus:outline-none focus:ring bg-white text-cyan-400 shadow-[0px_0px_5px_white] flex justify-center items-center focus:ring-white focus:ring-offset-2`}
                                       >
                                         
                                         
@@ -106,8 +106,8 @@ function Header() {
                         </div>
                     </div>
                     <div >
-                        <div className='extra-icon   h-14 w-14 lg:h-15 lg:w-15 rounded-full shadow-[0px 0px 10px black]  border-2 p-1 border-[#02dbbe] shadow-[0px_0px_7px_#00dfc2] ml-3  transition duration-200 ' data-aos="zoom-in" data-aos-delay="500">
-                            <img src={shortIcon} alt="icon" className='h-full w-full rounded-full' />
+                        <div className='extra-icon   h-15.5 w-15.5 lg:h-15 lg:w-15 rounded-full shadow-[0px 0px 10px black]  border-2 pb-2 p-1 border-[#c875ff] shadow-[0px_0px_7px_#d08aff] ml-3  transition duration-200 ' data-aos="zoom-in" data-aos-delay="500">
+                            <img src={ResumeIcon} alt="icon" className='h-full w-full rounded-full' />
 
                         </div>
                     </div>

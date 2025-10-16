@@ -124,7 +124,7 @@ const Skillspage = () => {
                                 <div className='p-3.5 sm:p-5 grid justify-center items-center flex-wrap'>
                                     <div>
                                         {/* 🧱 Skill Card Container */}
-                                        <div className={`rounded-4xl cursor-pointer grid justify-center items-center min-h-max border-2 ${item.skill_hover_theme} ${item.skill_theme} w-42 sm:min-h-max sm:w-53 pb-6 pt-4.5 sm:pb-8 sm:pt-6`}>
+                                        <div className={`rounded-4xl cursor-pointer grid justify-center items-center min-h-max border-2 ${item.skill_hover_theme} ${item.skill_theme} w-42 sm:min-h-max sm:w-50 pb-6 pt-4.5 sm:pb-8 sm:pt-6`}>
                                             <div className='w-full h-full grid justify-center items-center'>
                                                 <div className='grid justify-center items-center'>
 
@@ -132,7 +132,7 @@ const Skillspage = () => {
                                                     <img
                                                         src={item.skill_image}
                                                         alt="Skill Logo"
-                                                        className={`${item.skill_image == `${viteLogo}` ? 'mt-0' : ''} h-24 w-24 sm:h-29 sm:w-29 lg:h-33 transform hover:scale-110 active:scale-105 transition lg:w-33 ${item.image_theme}`}
+                                                        className={`${item.skill_image == `${viteLogo}` ? 'mt-0' : ''} h-24 w-24 sm:h-27 sm:w-27 lg:h-29 transform hover:scale-110 active:scale-105 transition lg:w-29 ${item.image_theme}`}
                                                         onClick={() => alert(`${item.skill_discription}`)} // 💬 Displays skill info on click
                                                     />
                                                 </div>
