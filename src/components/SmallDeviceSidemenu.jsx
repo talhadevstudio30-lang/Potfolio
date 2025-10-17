@@ -30,7 +30,7 @@ function SmallDeviceSidemenu() {
                         className="w-auto h-auto  
                             focus:bg-gray-100/40 hover:bg-gray-100/40 
                             rounded-3xl flex justify-center p-1.5 items-center  
-                            transition-all duration-200 [text-shadow:0_0_5px_#ffffff]
+                            transition-all duration-200 [text-shadow:0_0_3px_#ffffff]
                             focus:outline-none"
                         tabIndex={0}
                     >
@@ -43,7 +43,7 @@ function SmallDeviceSidemenu() {
                         className="w-auto h-auto mt-0.5 
                             focus:bg-gray-100/40 hover:bg-gray-100/40 
                             rounded-3xl flex justify-center p-1.5 items-center  
-                            transition-all duration-200 [text-shadow:0_0_5px_#ffffff]
+                            transition-all duration-200 [text-shadow:0_0_3px_#ffffff]
                             focus:outline-none"
                         tabIndex={0}
                     >
@@ -56,7 +56,7 @@ function SmallDeviceSidemenu() {
                         className="w-auto h-auto mt-0.5 
                             focus:bg-gray-100/40 hover:bg-gray-100/40 
                             rounded-3xl flex justify-center p-1.5 items-center  
-                            transition-all duration-200 [text-shadow:0_0_5px_#ffffff]
+                            transition-all duration-200 [text-shadow:0_0_3px_#ffffff]
                             focus:outline-none"
                         tabIndex={0}
                     >
@@ -69,7 +69,7 @@ function SmallDeviceSidemenu() {
                         className="w-auto h-auto mt-0.5 
                             focus:bg-gray-100/40 hover:bg-gray-100/40 
                             rounded-3xl flex justify-center p-1.5 items-center  
-                            transition-all duration-200 [text-shadow:0_0_5px_#ffffff]
+                            transition-all duration-200 [text-shadow:0_0_3px_#ffffff]
                             focus:outline-none"
                         tabIndex={0} // 👈 Makes the div focusable using Tab key
                     >
@@ -80,7 +80,7 @@ function SmallDeviceSidemenu() {
                     {/* ✉️ Contact Button */}
                     <div
                         className="w-auto h-auto mt-0.5 
-                            focus:bg-transparent [text-shadow:0_0_5px_#ffffff]
+                            focus:bg-transparent [text-shadow:0_0_3px_#ffffff]
                             hover:bg-transparent bg-gray-100/40 
                             rounded-3xl flex justify-center p-1.5 items-center  
                             transition-all duration-200 focus:outline-none"
@@ -97,7 +97,7 @@ function SmallDeviceSidemenu() {
                                  hover:bg-transparent
                                  bg-indigo-500/20 
                                  rounded-full flex justify-center p-1.5 items-center  
-                                 transition-all duration-200  pl-3 pr-3 [text-shadow:0_0_5px_#ffffff]
+                                 transition-all duration-200  pl-3 pr-3 [text-shadow:0_0_3px_#ffffff]
                                  focus:outline-none "
                             tabIndex={0}  // 👈 Makes the div focusable
                         >
