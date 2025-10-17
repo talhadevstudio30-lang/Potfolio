@@ -1,7 +1,6 @@
 // ⚛️ Importing React hooks and dependencies
 import { useEffect, useState } from "react";
 import developerImage from '../images/developer-image.jpg';
-import crossicon from '../images/download (1).png';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -40,7 +39,7 @@ const Sidebar = () => {
       <div className="relative ml-1">
 
         {/* 👇 Sidebar Button (Developer image + name) */}
-        <div className="absolute bottom-3.5 select-none flex flex-wrap cursor-pointer">
+        <div className="absolute SideBarStyle-forsmallheight bottom-3.5 select-none flex flex-wrap cursor-pointer">
           {/* 🧑‍💻 Sidebar Trigger Button */}
           <div
             className={`w-auto h-auto mt-2.5 

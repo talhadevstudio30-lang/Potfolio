@@ -17,7 +17,7 @@ body{
 }
 @media only screen and (max-width:450px) {
     .extra-icon{
-        @apply h-13 w-13
+        @apply h-14.5 w-14.5
     }
    
     .dev-image{
@@ -100,15 +100,29 @@ body{
 .heading-font{
     font-family: "Roboto", sans-serif;
 }
-
-@media only screen and  (max-height:1043px) {
-    .SideBarStyle{
-        @apply  h-[85vh]
+@media only screen and  (max-height:533px) {
+    .SideBarStyle-forsmallheight{
+        @apply hidden
     }
 }
-@media only screen and  (max-height:680px) {
+@media only screen and  (max-height:1043px) {
     .SideBarStyle{
-        @apply  h-auto
+        @apply  h-[85vh] mb-1
+    }
+}
+@media only screen and  (max-height:1306px) {
+    .SideBarStyle{
+        @apply  h-[85vh] mb-1
+    }
+}
+@media only screen and  (min-height:740px) {
+    .SideBarStyle{
+        @apply  mb-4.5
+    }
+}
+@media only screen and  (max-height:817px) {
+    .SideBarStyle{
+        @apply  h-auto 
     }
 }
 @media only screen and (max-height:1030px) {
@@ -116,3 +130,4 @@ body{
         @apply overflow-hidden h-auto  
     }
 }
+

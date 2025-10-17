@@ -13,7 +13,7 @@ function SmallDeviceSidemenu() {
     return (
         <>
             {/* 🧱 Main container */}
-            <div>
+            <div className='SideBarStyle-forsmallheight'>
                 {/* 🎨 Side menu wrapper with glass effect and hover animations */}
                 <div
                     className={`absolute select-none
@@ -34,7 +34,7 @@ function SmallDeviceSidemenu() {
                             focus:outline-none"
                         tabIndex={0}
                     >
-                        <img src={homeicon} alt="Home Icon" className="h-8 cursor-pointer w-8 md:h-9 md:w-9" />
+                        <img src={homeicon} alt="Home Icon" className="h-7 cursor-pointer w-7 sm:h-9 sm:w-9" />
                         <h1 className="text-[#2f94f9] hover:text-[#51a3f5] text-x ml-1 mr-1 sm:text-xl">Home</h1>
                     </div>
 
@@ -47,7 +47,7 @@ function SmallDeviceSidemenu() {
                             focus:outline-none"
                         tabIndex={0}
                     >
-                        <img src={abouticon} alt="About Icon" className="h-8 w-8 cursor-pointer md:h-9 md:w-9" />
+                        <img src={abouticon} alt="About Icon" className="h-7 w-7 cursor-pointer sm:h-9 sm:w-9" />
                         <h1 className="text-[#2f94f9] text-x ml-1.5 mr-1 hover:text-[#51a3f5] sm:text-xl">About</h1>
                     </div>
 
@@ -60,7 +60,7 @@ function SmallDeviceSidemenu() {
                             focus:outline-none"
                         tabIndex={0}
                     >
-                        <img src={skillsicon} alt="Skills Icon" className="h-8 w-8 cursor-pointer md:h-9 md:w-9" />
+                        <img src={skillsicon} alt="Skills Icon" className="h-7 w-7 cursor-pointer sm:h-9 sm:w-9" />
                         <h1 className="text-[#2f94f9] text-x ml-1.5 mr-1 hover:text-[#51a3f5] sm:text-xl">Skills</h1>
                     </div>
 
@@ -73,7 +73,7 @@ function SmallDeviceSidemenu() {
                             focus:outline-none"
                         tabIndex={0} // 👈 Makes the div focusable using Tab key
                     >
-                        <img src={projectsicon} alt="Projects Icon" className="h-8 w-8 cursor-pointer md:h-9 md:w-9" />
+                        <img src={projectsicon} alt="Projects Icon" className="h-7 w-7 cursor-pointer sm:h-9 sm:w-9" />
                         <h1 className="text-[#2f94f9] text-x ml-1.5 mr-1 hover:text-[#51a3f5] sm:text-xl">Projects</h1>
                     </div>
 
@@ -86,25 +86,25 @@ function SmallDeviceSidemenu() {
                             transition-all duration-200 focus:outline-none"
                         tabIndex={0}
                     >
-                        <img src={contactsicon} alt="Contact Icon" className="h-9 w-9 cursor-pointer md:h-10 md:w-10" />
+                        <img src={contactsicon} alt="Contact Icon" className="h-8.5 w-8.5 cursor-pointer sm:h-10 sm:w-10" />
                         <h1 className="text-[#2f94f9] text-x ml-1 mr-1 hover:text-[#51a3f5] sm:text-xl">Contact</h1>
                     </div>
                     {/* Resume Button */}
                   
                         <div
                             className="w-auto h-auto mt-1
-                                                         focus:bg-transparent 
-                                                         hover:bg-transparent
-                                                         bg-indigo-500/20 
-                                                         rounded-full flex justify-center p-1.5 items-center  
-                                                         transition-all duration-200  pl-3 pr-3 [text-shadow:0_0_5px_#ffffff]
-                                                         focus:outline-none "
+                                 focus:bg-transparent 
+                                 hover:bg-transparent
+                                 bg-indigo-500/20 
+                                 rounded-full flex justify-center p-1.5 items-center  
+                                 transition-all duration-200  pl-3 pr-3 [text-shadow:0_0_5px_#ffffff]
+                                 focus:outline-none "
                             tabIndex={0}  // 👈 Makes the div focusable
                         >
                             <img
                                 src={Resume}
                                 alt=""
-                                className="h-8 w-8 cursor-pointer md:h-9 md:w-9"
+                                className="h-7 w-7 cursor-pointer sm:h-9 sm:w-9"
                             />
                             <h1 className={`text-indigo-500 hover:text-indigo-400 text-x ml-2 mr-1 sm:text-xl`}>Resume</h1>
                         </div>
