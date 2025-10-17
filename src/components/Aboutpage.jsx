@@ -54,8 +54,8 @@ function Aboutpage() {
 
   return (
     <>
-      <div className='w-full flex pt-0.5 sm:pt-1.5 justify-center items-center pb-10 md:p-0' >
-        <div className="Name bg-blue-50/70 p-3 md:p-4  rounded-3xl pb-1.5 w-[98%] shadow-[0px_0px_7px_#168bffba] ">
+      <div className='w-full flex pt-0.5 sm:pt-1.5 justify-center items-center pl-2 pr-2 pb-10 md:p-0' >
+        <div className="Name bg-blue-50/70 p-3 md:p-4 rounded-4xl sm:rounded-4xl pb-1.5 sm:w-[98%] w-full  shadow-[0px_0px_7px_#168bffba] ">
           <h1
             className="text-4xl tracking-tight md:text-4xl lg:text-5xl text-center mb-2.5 bg-gradient-to-r from-blue-500 pb-2.5 to-cyan-400 bg-clip-text text-transparent mt-2"
             style={{ fontFamily: 'Roboto, sans-serif', fontWeight: '400' }}
