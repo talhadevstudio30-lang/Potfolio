@@ -79,7 +79,7 @@ function Aboutpage() {
             </div>
           </div>
           <div className="md:flex grid justify-center items-center  md:justify-center md:items-center gap-4 cursor-pointer" data-aos="fade-up" data-aos-delay="100">
-            <div className="bg-gradient-to-br to-blue-300 transition duration-200 hover:shadow-[0px_0px_15px_#003df5] md:mr-1.5 from-blue-700 p-4.5 pl-4 pt-3 pr-6 rounded-3xl text-white  shadow-[0px_0px_10px_#003df5] text-lg lg:text-xl">
+            <div className="bg-gradient-to-br to-blue-300 transition duration-200 hover:shadow-[0px_0px_15px_#003df5] md:mr-1.5 from-blue-700 p-4.5 pl-4 pt-3 pr-6 rounded-4xl sm:rounded-3xl text-white  shadow-[0px_0px_10px_#003df5] text-lg lg:text-xl">
               <div className='flex justify-start items-center mb-2'>
                 <img src={TechnicalImg} alt="Technical" className='h-8 w-8 md:h-9 md:w-9' />
                 <h3 className="text-xl font-semibold ml-1">Technical Skills</h3>
@@ -96,7 +96,7 @@ function Aboutpage() {
               </ul>
             </div>
 
-            <div className="bg-gradient-to-br cursor-pointer from-cyan-400 to-cyan-700   shadow-[0px_0px_10px_#00e0f0] hover:shadow-[0px_0px_15px_#00e0f0] md:ml-1.5 transition duration-200  rounded-3xl text-white p-4.5 pl-4 pt-3 pr-6 text-lg lg:text-xl" data-aos="zoom-in" data-aos-delay="100">
+            <div className="bg-gradient-to-br cursor-pointer from-cyan-400 to-cyan-700   shadow-[0px_0px_10px_#00e0f0] hover:shadow-[0px_0px_15px_#00e0f0] md:ml-1.5 transition duration-200 rounded-4xl sm:rounded-3xl text-white p-4.5 pl-4 pt-3 pr-6 text-lg lg:text-xl" data-aos="zoom-in" data-aos-delay="100">
               <div className='flex justify-start items-end mb-2.5'>
                 <img src={ProfessionalImg} alt="Professional" className='h-8 w-8 md:h-9 md:w-9' />
                 <h3 className="text-xl font-semibold ml-1.5">Professional Experience</h3>
