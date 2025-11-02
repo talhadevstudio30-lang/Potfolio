@@ -64,7 +64,7 @@ const Skillspage = () => {
             skill_image: `${Git}`,
             skill_title: "Git",
             image_theme: '',
-            skill_theme: "border-orange-300 bg-orange-100 shadow-[0px_0px_5px_#FDBA74]",
+            skill_theme: "border-orange-600/40 bg-orange-400/30 shadow-[0px_0px_5px_#FDBA74]",
             skill_title_theme: "text-orange-600",
             skill_hover_theme: "hover:border-orange-500 hover:shadow-[0px_0px_10px_#FDBA74] hover:bg-orange-200  transition duration-200",
             skill_discription: "🔗 Git is a distributed version control system 🛠️ that tracks code changes ✍️, enables seamless collaboration 🤝, supports branching 🌿, and ensures efficient project management 📂 for developers 👨‍💻👩‍💻."
