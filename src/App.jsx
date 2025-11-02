@@ -66,7 +66,9 @@ const App = () => {
           {/* These elements are enclosed within a single div, serving as the sidebar sections */}
           <div>
             <Secondpage />
+            <div id='skills'>
             <Skillspage />
+            </div>
           </div>
         </>
       )}

@@ -23,13 +23,13 @@ const Sidebar = () => {
 
   // 🧩 Component States
   // 🎛️ Control visibility of small device side menu and large device side menu button
-  const [SideMenuCrossBtn_style, setSideMenuCrossBtn_style] = useState('hidden');  // ❌ Controls small device menu toggle
+  const [isMenuOpen , setisMenuOpen ] = useState('hidden');  // ❌ Controls small device menu toggle
   
 
   // 🎯 Function to toggle sidebar menus on click
   const SidebarMenuBtn = () => {
     // 🔄 Toggle small device menu visibility
-    setSideMenuCrossBtn_style((event) => (event === "block" ? "hidden" : "block"));
+    setisMenuOpen((event) => (event === "block" ? "hidden" : "block"));
   };
 
   // 🧱 JSX Layout
@@ -51,7 +51,7 @@ const Sidebar = () => {
             onClick={SidebarMenuBtn}  // 🖱️ Toggles sidebar menu
             tabIndex={0}
             data-aos="zoom-in"
-            data-aos-delay="100"
+            data-aos-delay="50"
           >
             {/* 🖼️ Developer Avatar */}
             <img src={developerImage} alt="Developer" className="h-11 w-11 md:h-13 md:w-13 rounded-full" />
@@ -64,19 +64,16 @@ const Sidebar = () => {
         </div>
 
         {/* 📱 Small Device Sidebar Menu */}
-        <div className={`${SideMenuCrossBtn_style} block md:hidden`}>
-          <SmallDeviceSidemenu 
-            SideMenuCrossBtn_style={SideMenuCrossBtn_style} 
-            setSideMenuCrossBtn_style={setSideMenuCrossBtn_style} 
-          />
+        <div className={`${isMenuOpen}`}>
+           <div className={` block md:hidden`}>
+          <SmallDeviceSidemenu />
         </div>
 
         {/* 💻 Large Device Sidebar Menu */}
-        <div className={` ${SideMenuCrossBtn_style} hidden md:block`} >
-          <LargeDeviceSidemenu SideMenuCrossBtn_style={SideMenuCrossBtn_style} setSideMenuCrossBtn_style={setSideMenuCrossBtn_style}
-          />
+        <div className={` hidden md:block`} >
+          <LargeDeviceSidemenu />
         </div>
-
+        </div>
       </div>
     </>
   );

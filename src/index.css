@@ -122,7 +122,7 @@ body{
 }
 @media only screen and  (max-height:817px) {
     .SideBarStyle{
-        @apply  h-auto 
+        @apply  h-auto mb-1
     }
 }
 @media only screen and (max-height:1030px) {
