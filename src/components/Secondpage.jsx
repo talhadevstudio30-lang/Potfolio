@@ -1,30 +1,22 @@
-import React, { lazy, Suspense, memo } from "react";
+import { useState } from 'react'; // ⚛️ useState hook imported from React for managing state
+import Sidebar from './Sidebar'; // 🧭 Importing Sidebar component
+import Aboutpage from './Aboutpage'; // 📄 Importing About Page component
 
-// 💤 Lazy-load big components for faster initial paint
-const Sidebar = lazy(() => import("./Sidebar"));
-const Aboutpage = lazy(() => import("./Aboutpage"));
+const Secondpage = () => { // 🚀 Defining the Secondpage component
 
-const Secondpage = () => {
-  return (
-    <div className="relative">
-      {/* ⚡ Sidebar - stays sticky for smoother scroll */}
-      <div
-        className="SideBarMenu sticky md:top-10"
-        style={{ zIndex: 1, willChange: "transform" }}
-      >
-        <Suspense fallback={null}>
-          <Sidebar />
-        </Suspense>
-      </div>
+    return (
+        <>
+            {/* 🧩 Sidebar section (sticky on scroll) */}
+            <div className='SideBarMenu sticky md:top-10' style={{ zIndex: '1' }}>
+                <Sidebar /> {/* 📚 Renders Sidebar */}
+            </div>
 
-      {/* ⚡ About Section */}
-      <div id="about">
-        <Suspense fallback={null}>
-          <Aboutpage />
-        </Suspense>
-      </div>
-    </div>
-  );
-};
+            {/* 💬 About section */}
+            <div id='about'>
+                <Aboutpage /> {/* 👤 Displays Aboutpage component */}
+            </div>
+        </>
+    )
+}
 
-export default memo(Secondpage);
+export default Secondpage; // 🌟 Exporting Secondpage for use in other parts of the app
