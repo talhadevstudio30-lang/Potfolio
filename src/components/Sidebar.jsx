@@ -65,12 +65,12 @@ const Sidebar = () => {
 
         {/* 📱 Small Device Sidebar Menu */}
         <div className={`${isMenuOpen}`}>
-           <div className={` block md:hidden`}>
+           <div className={`block md:hidden`}>
           <SmallDeviceSidemenu />
         </div>
 
         {/* 💻 Large Device Sidebar Menu */}
-        <div className={` hidden md:block`} >
+        <div className={`hidden md:block`} >
           <LargeDeviceSidemenu />
         </div>
         </div>

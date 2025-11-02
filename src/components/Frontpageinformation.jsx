@@ -17,14 +17,14 @@ function Frontpageinformation() {
         <>
             <div className='front-page-container h-screen grid justify-center items-center'>
                 <div className='grid justify-center items-center md:flex md:justify-center md:items-center h-auto  '>
-                    <div className='h-auto w-auto  flex justify-center items-center' data-aos="zoom-in" data-aos-delay="200">
+                    <div className='h-auto w-auto  flex justify-center items-center' data-aos="zoom-in" data-aos-delay="50">
                         {/* this div is the container of potfolio image */}
                         <div>
                             <img src={developerImage} alt="potfolio image" className='dev-image h-62 w-62 md:h-70 md:w-70 rounded-full md:mr-6.5 shadow-[0px_0px_15px_#0080ff]' />
                         </div>
                     </div>
                     {/* this div is the contaner of title of homepage */}
-                    <div className='h-auto w-auto mt-4 sm:ml-4.5 text-black' data-aos="zoom-in" data-aos-delay="300">
+                    <div className='h-auto w-auto mt-4 sm:ml-4.5 text-black' data-aos="zoom-in" data-aos-delay="100">
                         <div className='home-page-title '>
                             <h3 className='text-xl md:text-2xl ml-3 md:ml-2.5'>Hello, I'm</h3>
                         </div>

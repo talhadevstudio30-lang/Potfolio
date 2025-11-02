@@ -97,7 +97,7 @@ const Skillspage = () => {
                 <div>
                     {/* 🏷️ Page Title Section */}
                     <div>
-                        <div data-aos="zoom-in" data-aos-delay="100">
+                        <div data-aos="zoom-in" data-aos-delay="50">
                             <h1
                                 className="relative text-4xl mt-10 sm:text-5xl lg:text-6xl font-semibold text-center bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent tracking-tight drop-shadow-[0_0_20px_rgba(59,130,246,0.6)] "
                                 style={{ fontFamily: 'Roboto, sans-serif', zIndex: -1 }}
@@ -120,7 +120,7 @@ const Skillspage = () => {
                     {/* 🎨 Skill Cards Section */}
                     <div className='flex justify-center items-center flex-wrap'>
                         {items.map((item, index) => (
-                            <div key={index} data-aos="zoom-in" data-aos-delay="100">
+                            <div key={index} data-aos="zoom-in" data-aos-delay="50">
                                 <div className='p-3.5 sm:p-5 grid justify-center items-center flex-wrap'>
                                     <div>
                                         {/* 🧱 Skill Card Container */}
