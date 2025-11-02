@@ -1,20 +1,24 @@
-import { useState } from 'react'; // ⚛️ useState hook imported from React for managing state
-import Sidebar from './Sidebar'; // 🧭 Importing Sidebar component
-import Aboutpage from './Aboutpage'; // 📄 Importing About Page component
+import { useState, Suspense, lazy } from 'react'; // ⚛️ useState hook imported from React for managing state
+const Aboutpage = lazy(() => import("./Aboutpage"))
+const Sidebar = lazy(() => import("./Sidebar"))
 
 const Secondpage = () => { // 🚀 Defining the Secondpage component
 
     return (
         <>
             {/* 🧩 Sidebar section (sticky on scroll) */}
-            <div className='SideBarMenu sticky md:top-10' style={{ zIndex: '1' }}>
-                <Sidebar /> {/* 📚 Renders Sidebar */}
-            </div>
+            <Suspense fallback={<p>SideBar</p>}>
+                <div className='SideBarMenu sticky md:top-10' style={{ zIndex: '1' }}>
+                    <Sidebar /> {/* 📚 Renders Sidebar */}
+                </div>
+            </Suspense>
 
             {/* 💬 About section */}
-            <div id='about'>
-                <Aboutpage /> {/* 👤 Displays Aboutpage component */}
-            </div>
+            <Suspense fallback={<p>SideBar</p>}>
+                <div id='about'>
+                    <Aboutpage /> {/* 👤 Displays Aboutpage component */}
+                </div>
+            </Suspense>
         </>
     )
 }
