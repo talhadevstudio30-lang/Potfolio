@@ -31,6 +31,7 @@ const Skillspage = () => {
             skill_discription: "🌐 HTML is a markup language 🏗️ that structures web content 📄, using elements 🔖 and tags 🏷️ to create webpages with text ✍️, links 🔗, and multimedia 🎬.",
             skill_theme: "border-orange-300 bg-orange-100 shadow-[0px_0px_5px_#FDBA74]",
             skill_title_theme: "text-orange-600",
+            skill_container:"HTML",
             skill_hover_theme: "hover:border-orange-400 hover:shadow-[0px_0px_10px_#FDBA74] hover:bg-orange-200  transition duration-200"
         },
         {
@@ -40,6 +41,7 @@ const Skillspage = () => {
             skill_theme: "border-blue-300 bg-blue-100 shadow-[0px_0px_5px_#93C5FD]",
             skill_title_theme: "text-blue-500",
             skill_hover_theme: "hover:border-blue-400 hover:shadow-[0px_0px_10px_#93C5FD] hover:bg-blue-200  transition duration-200",
+            skill_container:"CSS",
             skill_discription: "🎨 CSS is a stylesheet language 📜 that styles web content 🌐, controlling layout 🖼️, colors 🌈, fonts ✍️, and responsiveness 📱 to enhance visual appeal ✨."
         },
         {
@@ -49,6 +51,7 @@ const Skillspage = () => {
             skill_theme: "border-yellow-300 bg-yellow-100 shadow-[0px_0px_5px_#FCD34D]",
             skill_title_theme: "text-yellow-400",
             skill_hover_theme: "hover:border-yellow-400 hover:shadow-[0px_0px_10px_#FCD34D] hover:bg-yellow-200  transition duration-200",
+            skill_container:"JavaScript",
             skill_discription: "✨ JavaScript is a powerful programming language 💻 that adds interactivity 🖱️ to web pages 🌐, enabling dynamic content 🔄, animations 🎬, and engaging user experiences 🚀."
         },
         {
@@ -58,6 +61,7 @@ const Skillspage = () => {
             skill_theme: "border-gray-400 bg-gray-200 shadow-[0px_0px_5px_#737171]",
             skill_title_theme: "text-gray-700",
             skill_hover_theme: "hover:border-gray-500 hover:shadow-[0px_0px_10px_#737171] hover:bg-gray-300  transition duration-200",
+            skill_container:"GitHub",
             skill_discription: "🌐 GitHub is a web-based platform ⚡ for version control 🔄 and collaboration 🤝, helping developers manage code repositories 📂, track changes 📝, and build projects together 🚀."
         },
         {
@@ -67,12 +71,14 @@ const Skillspage = () => {
             skill_theme: "border-orange-600/40 bg-orange-400/30 shadow-[0px_0px_5px_#FDBA74]",
             skill_title_theme: "text-orange-600",
             skill_hover_theme: "hover:border-orange-500 hover:shadow-[0px_0px_10px_#FDBA74] hover:bg-orange-200  transition duration-200",
+            skill_container:"Git",
             skill_discription: "🔗 Git is a distributed version control system 🛠️ that tracks code changes ✍️, enables seamless collaboration 🤝, supports branching 🌿, and ensures efficient project management 📂 for developers 👨‍💻👩‍💻."
         },
         {
             skill_image: `${viteLogo}`,
             skill_title: "Vite + React",
             image_theme: 'mb-1',
+            skill_container:"Vite + React",
             skill_theme: "border-indigo-400 bg-blue-100 shadow-[0px_0px_5px_#6366F1]",
             skill_title_theme: "text-indigo-500",
             skill_hover_theme: "hover:border-indigo-500 hover:shadow-[0px_0px_10px_#6366F1] hover:bg-indigo-200  transition duration-200",
@@ -82,6 +88,7 @@ const Skillspage = () => {
             skill_image: `${tailwindcssLogo}`,
             skill_title: "Tailwind CSS",
             image_theme: '',
+            skill_container:"Tailwind CSS",
             skill_theme: "border-cyan-300 bg-cyan-100 shadow-[0px_0px_5px_#67E8F9]",
             skill_title_theme: "text-cyan-600",
             skill_hover_theme: "hover:border-cyan-500 hover:shadow-[0px_0px_10px_#67E8F9] hover:bg-cyan-200  transition duration-200",
@@ -124,7 +131,7 @@ const Skillspage = () => {
                                 <div className='p-3.5 sm:p-5 grid justify-center items-center flex-wrap'>
                                     <div>
                                         {/* 🧱 Skill Card Container */}
-                                        <div className={`rounded-4xl cursor-pointer grid justify-center items-center min-h-max border-2 ${item.skill_hover_theme} ${item.skill_theme} w-42 sm:min-h-max sm:w-50 pb-6 pt-4.5 sm:pb-8 sm:pt-6`}>
+                                        <div className={`rounded-4xl cursor-pointer grid justify-center items-center min-h-max border-2 ${item.skill_hover_theme} ${item.skill_theme} w-42 sm:min-h-max sm:w-50 pb-6 pt-4.5 sm:pb-8 sm:pt-6 ${item.skill_container} ${item.skill_container === 'Tailwind CSS' ? 'w-43' : ''}`}>
                                             <div className='w-full h-full grid justify-center items-center'>
                                                 <div className='grid justify-center items-center'>
 
@@ -139,7 +146,7 @@ const Skillspage = () => {
 
                                                 {/* 🏷️ Skill Title */}
                                                 <div>
-                                                    <h1 className={`${item.skill_title_theme} text-center text-2xl sm:text-3xl pl-3.5 pr-3.5 ${item.skill_title == 'Vite + React.js' ? 'mt-1' : ''}`}>
+                                                    <h1 className={`${item.skill_title_theme} text-center text-2xl sm:text-3xl pl-3.5 pr-3.5 ${item.skill_title == 'Vite + React.js' ? 'mt-1' : ''}`} >
                                                         {item.skill_title}
                                                     </h1>
                                                 </div>

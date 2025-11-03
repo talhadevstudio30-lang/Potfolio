@@ -55,13 +55,13 @@ function Header() {
             <div className="flex justify-center items-center flex-wrap md:px-1 lg:gap-1">
               {["Home", "About", "Skills", "Projects", "Contact"].map(
                 (item, index) => (
-                  <div
+                  <a
                     key={index}
                     href={`#${item.toLowerCase()}`}
                     className={`px-2 py-1.5 m-1 rounded-full transition-all duration-300 ease-in-out bg-gray-100/20 flex justify-center items-center shadow-[0px_0px_5px_white] hover:bg-gray-100 hover:text-[#00bfffd3] focus:outline-none focus:ring focus:ring-white focus:ring-offset-2`}
                   >
                     <span className="ml-1 mr-0.5">{item}</span>
-                  </div>
+                  </a>
                 )
               )}
             </div>
