@@ -1,6 +1,6 @@
 // ⚛️ Importing React hooks and dependencies
 import { useEffect, useState } from "react";
-import developerImage from '../images/developer-image.jpg';
+import Short_icon from "../images/short-icon.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -54,7 +54,7 @@ const Sidebar = () => {
             data-aos-delay="50"
           >
             {/* 🖼️ Developer Avatar */}
-            <img src={developerImage} alt="Developer" className="h-11 w-11 md:h-13 md:w-13 rounded-full" />
+            <img src={Short_icon} alt="Developer" className="h-11 w-11 md:h-13 md:w-13 rounded-full" />
             
             {/* 🧾 Developer Name */}
             <h1 className="text-blue-500 ml-1.5 mr-1 text-xl sm:text-xl [text-shadow:0_0_6px_#ffffff]">
