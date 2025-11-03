@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, Suspense, lazy } from 'react'
 import Frontpage from './components/Frontpage';
 import Secondpage from './components/Secondpage';
 import Skillspage from './components/Skillspage';
