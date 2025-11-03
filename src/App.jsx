@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, Suspense, lazy } from 'react'
 import Frontpage from './components/Frontpage';
 import Secondpage from './components/Secondpage';
-import Skillspage from './components/Skillspage';
+const Skillspage = lazy(() => import("./components/Skillspage"));
 import Alertpage from './components/Alertpage';
 
 const App = () => {
@@ -33,7 +33,6 @@ const App = () => {
       setAlertpage(true);
       setmain_potfolio(false);
     } else {
-      console.log("Today is not birthday 🎂 or already shown");
       setAlertpage(false);
       setmain_potfolio(true);
     }
@@ -67,7 +66,9 @@ const App = () => {
           <div>
             <Secondpage />
             <div id='skills'>
-            <Skillspage />
+              <Suspense fallback={<div className='flex justify-start items-center mb-1  mt-1'><p className='text-blue-400 text-2xl sm:text-3xl ml-2.5 border-2 px-2 py-1.5 rounded-xl h-auto w-auto border-blue-400'>Skills...</p></div>}>
+                <Skillspage />
+              </Suspense>
             </div>
           </div>
         </>
