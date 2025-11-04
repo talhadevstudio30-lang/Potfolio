@@ -1,6 +1,6 @@
 // ⚛️ Importing React hooks and dependencies
 import { useEffect, useState } from "react";
-import Short_icon from "../images/short-icon.png";
+import Short_icon from "../images/TJ-icon.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -36,7 +36,7 @@ const Sidebar = () => {
   return (
     <>
       {/* 🧍 Sidebar Main Wrapper */}
-      <div className="relative ml-1">
+      <div className="relative ml-2">
 
         {/* 👇 Sidebar Button (Developer image + name) */}
         <div className="absolute SideBarStyle-forsmallheight bottom-3.5 select-none flex flex-wrap cursor-pointer">
@@ -54,11 +54,11 @@ const Sidebar = () => {
             data-aos-delay="50"
           >
             {/* 🖼️ Developer Avatar */}
-            <img src={Short_icon} alt="Developer" className="h-11 w-11 md:h-13 md:w-13 rounded-full" />
+            <img src={Short_icon} alt="Developer" className="h-8 ml-0.5 w-8 md:h-9 md:w-9" />
             
             {/* 🧾 Developer Name */}
-            <h1 className="text-blue-500 ml-1.5 mr-1 text-xl sm:text-xl [text-shadow:0_0_6px_#ffffff]">
-              Talha Javed
+            <h1 className="text-blue-500 ml-1.5 mr-1 text-xl sm:text-xl [text-shadow:0_0_5px_#ffffff]">
+             Portfolio
             </h1>
           </div>
         </div>

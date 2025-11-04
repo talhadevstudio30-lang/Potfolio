@@ -52,7 +52,7 @@ function Header() {
             data-aos="zoom-in"
             data-aos-delay="100"
           >
-            <div className="flex justify-center items-center flex-wrap md:px-1 lg:gap-1">
+            {/* <div className="flex justify-center items-center flex-wrap md:px-1 lg:gap-1">
               {["Home", "About", "Skills", "Projects", "Contact"].map(
                 (item, index) => (
                   <a
@@ -64,11 +64,11 @@ function Header() {
                   </a>
                 )
               )}
-            </div>
+            </div> */}
           </nav>
 
           {/* Mobile Menu Button */}
-          <div className="flex-none block md:hidden" data-aos="zoom-in" data-aos-delay="200">
+          {/* <div className="flex-none block md:hidden" data-aos="zoom-in" data-aos-delay="200">
             <button
               onClick={toggleMenu}
               className="border-2 border-gray-50 shadow-[0px_0px_5px_white] rounded-full mr-2 mt-1 p-1 transition duration-200 active:-rotate-6 active:shadow-[0px_0px_10px_white]"
@@ -82,7 +82,7 @@ function Header() {
                 decoding="async"
               />
             </button>
-          </div>
+          </div> */}
         </div>
 
         {/* Resume Icon */}
