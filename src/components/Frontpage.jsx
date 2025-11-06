@@ -7,7 +7,7 @@ function Frontpage() {
         <>
             <div className='pb-7' id='home'>
                 {/* this is the header of this potfolio*/}
-                <div>
+                <div className='fixed w-full top-[-2px]' style={{zIndex : "2"}}>
                     <Header />
                 </div>
                 {/* this is the main from page information with developer information */}

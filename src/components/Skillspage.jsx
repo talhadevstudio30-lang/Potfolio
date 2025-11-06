@@ -139,7 +139,7 @@ const Skillspage = () => {
                                                     <img
                                                         src={item.skill_image}
                                                         alt="Skill Logo"
-                                                        className={`${item.skill_image == `${viteLogo}` ? 'mt-0' : ''} h-24 w-24 sm:h-27 sm:w-27 lg:h-29 transform hover:scale-110 active:scale-105 transition lg:w-29 ${item.image_theme}`}
+                                                        className={`${item.skill_image == `${viteLogo}` ? 'mt-0' : ''} h-24 w-24 sm:h-27 sm:w-27 lg:h-29 transform duration-100 hover:scale-110 active:scale-105 transition lg:w-29 ${item.image_theme}`}
                                                         onClick={() => alert(`${item.skill_discription}`)} // 💬 Displays skill info on click
                                                     />
                                                 </div>

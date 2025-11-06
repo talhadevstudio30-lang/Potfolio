@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState, Suspense, lazy } from 'react'
 import Frontpage from './components/Frontpage';
-import Secondpage from './components/Secondpage';
 const Skillspage = lazy(() => import("./components/Skillspage"));
 import Alertpage from './components/Alertpage';
+const Aboutpage = lazy(() => import("./components/Aboutpage"));
+
 
 const App = () => {
   const [alertpage, setAlertpage] = useState(false);
@@ -62,15 +63,18 @@ const App = () => {
           <div>
             <Frontpage />
           </div>
-          {/* These elements are enclosed within a single div, serving as the sidebar sections */}
-          <div>
-            <Secondpage />
-            <div id='skills'>
-              <Suspense fallback={<div className='flex justify-start items-center mb-1  mt-1'><p className='text-blue-400 text-2xl sm:text-3xl ml-2.5 border-2 px-2 py-1.5 rounded-xl h-auto w-auto border-blue-400'>Skills...</p></div>}>
-                <Skillspage />
-              </Suspense>
-            </div>
+          {/* 💬 About section */}
+          <div id='about'>
+            <Suspense fallback={<div className='flex justify-start items-center mt-3'><p className='text-blue-400 text-2xl sm:text-3xl ml-2.5 border-2 px-2 py-1.5 rounded-xl h-auto w-auto border-blue-400'>About Information...</p></div>}>
+              <Aboutpage /> {/* 👤 Displays Aboutpage component */}
+            </Suspense>
           </div>
+          <div id='skills'>
+            <Suspense fallback={<div className='flex justify-start items-center mb-1  mt-1'><p className='text-blue-400 text-2xl sm:text-3xl ml-2.5 border-2 px-2 py-1.5 rounded-xl h-auto w-auto border-blue-400'>Skills...</p></div>}>
+              <Skillspage />
+            </Suspense>
+          </div>
+
         </>
       )}
     </>
